@@ -78,9 +78,9 @@ const Footer = () => {
                                                 </Link>
                                             </li>
                                             <li className="mb-0">
-                                                <a target="_blank" href="#!" className="link-info text-decoration-none fs-5 text-white">
+                                                <Link onClick={scrollToTop} to="/Tradefair" className="link-info text-decoration-none fs-5 text-white">
                                                     &#11162; Trade Fair Participation
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -163,14 +163,14 @@ const Footer = () => {
                             <div className="row gy-4 gy-md-0 align-items-sm-center">
                                 <div className="col-xs-12 col-sm-6 col-md-4 order-0 order-md-0">
                                     <div className="footer-logo-wrapper text-center text-sm-start">
-                                        <a target="_blank" href="#!">
+                                        <Link onClick={scrollToTop} to="/Home">
                                             <img
                                                 src={Logo}
                                                 alt="BootstrapBrain Logo"
                                                 width={175}
                                                 height={57}
                                             />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="col-xs-12 col-md-4 order-2 order-md-1">
