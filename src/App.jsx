@@ -21,12 +21,14 @@ const App = () => {
                 <FloatingWhatsApp
                     phoneNumber="+91 9925614381"
                     accountName="AIROXIN INTERNATIONAL"
-                    chatMessage="Hello Dear I am from AIROXIN INTERNATIONAL, How Can I Help You?"
+                    chatMessage="Hello Dear, How Can I Help You?"
                     avatar={Logo}
                 />
                 <BrowserRouter>
                     <Routes>
                         <Route path="*" element={<Error_Page></Error_Page>}></Route>
+                        <Route path="/Error" element={<Error_Page></Error_Page>}></Route>
+
                         <Route path="/" element={<Home_Page></Home_Page>}></Route>
 
                         <Route path="/Home" element={<Home_Page></Home_Page>}></Route>

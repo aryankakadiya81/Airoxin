@@ -6,6 +6,10 @@ import { useNavigate } from 'react-router-dom';
 
 const Hero_Section = () => {
     let Navigate = useNavigate();
+    const scrollToTophero = () => {
+        window.scrollTo(0, 0)
+        Navigate("/About")
+    }
     return (
         <>
             <div>
@@ -23,7 +27,8 @@ const Hero_Section = () => {
                                     <button
                                         className="btn btn-primary p-3 fw-bold bsb-btn-2xl rounded-pill"
                                         type="button"
-                                        onClick={()=>{Navigate("/About")}}
+                                        onClick={scrollToTophero}
+
                                     >
                                         LERN MORE
                                     </button>
