@@ -1,12 +1,19 @@
-import React from 'react';
-import './Navbar.css'
+import React, { useContext } from 'react';
+import './Navbar.css';
+import { Global } from '../../App';
 import Logo from '../../Assets/Logo/WHITE/HORIZONTAL/HORIZONTAL WHITE.svg';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Product_Data from '../Json_Files/Product_Page.json';
 
 const Navbar = () => {
     const scrollToTop = () => {
         window.scrollTo(0, 0)
     }
+
+    let { Categorys, SubCategorys } = useContext(Global);
+
+    let [Category, setCategory] = Categorys;
+    let [SubCategory, setSubCategory] = SubCategorys;
     return (
         <>
             <div className='sticky-top '>
@@ -20,7 +27,7 @@ const Navbar = () => {
                             />
                         </Link>
                         <button
-                            className="navbar-toggler"
+                            className="navbar-toggler "
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent"
@@ -78,16 +85,19 @@ const Navbar = () => {
                                         className="dropdown-menu dropdown-menu-end"
                                         aria-labelledby="navbarDropdown"
                                     >
-                                        <li>
-                                            <a className="dropdown-item" href="#">
-                                                Product-1
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item" href="#">
-                                                Product-2
-                                            </a>
-                                        </li>
+
+                                        {
+                                            Product_Data.Category.map((el) => {
+                                                return (
+                                                    <li key={el.id}>
+                                                        <Link onClick={()=>{setCategory(el.Category_Name);window.scrollTo(0, 0);}} className="dropdown-item" to="/Category">
+                                                            {el.Category_Name}
+                                                        </Link>
+                                                    </li>
+                                                )
+                                            })
+                                        }
+
                                     </ul>
                                 </li>
                                 <li className="nav-item fs-5">

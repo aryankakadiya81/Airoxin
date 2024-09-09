@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { Global } from '../../App.jsx';
 import Logo from '../../Assets/Logo/HORIZONTAL/HORIZONTAL.svg';
 import { Link } from 'react-router-dom';
 import Contact_Json from '../Json_Files/Contact_Page.json';
+import Product_Data from '../Json_Files/Product_Page.json';
 
 const Footer = () => {
-    
-    let [Data,setData] = useState(Contact_Json);
+
+
+    let { Categorys, SubCategorys } = useContext(Global);
+
+    let [Category, setCategory] = Categorys;
+    let [SubCategory, setSubCategory] = SubCategorys;
+
+    let [Data, setData] = useState(Contact_Json);
     const scrollToTop = () => {
         window.scrollTo(0, 0)
     }
@@ -31,7 +39,7 @@ const Footer = () => {
                                                 className="col-10 link-info text-decoration-none text-white fs-5"
                                                 href="tel:+919925614381"
                                             >
-                                               {Data.phone}
+                                                {Data.phone}
                                             </a>
                                         </div>
                                         <div className="row mb-3 text-white">
@@ -89,21 +97,18 @@ const Footer = () => {
                                     <div className="widget">
                                         <h4 className="widget-title mb-4 fs-2 text-white">Products</h4>
                                         <ul className="list-unstyled">
-                                            <li className="mb-2">
-                                                <a target="_blank" href="#!" className="link-info text-decoration-none fs-5 text-white">
-                                                    &#11162; Product-1
-                                                </a>
-                                            </li>
-                                            <li className="mb-2">
-                                                <a target="_blank" href="#!" className="link-info text-decoration-none fs-5 text-white">
-                                                    &#11162; Product-2
-                                                </a>
-                                            </li>
-                                            <li className="mb-2">
-                                                <a target="_blank" href="#!" className="link-info text-decoration-none fs-5 text-white">
-                                                    &#11162; Product-3
-                                                </a>
-                                            </li>
+
+                                            {Product_Data.Category.map((el) => {
+                                                return (
+                                                    <li className="mb-2">
+                                                        <Link onClick={()=>{setCategory(el.Category_Name);window.scrollTo(0, 0);}} to="/Category" className="link-info text-decoration-none fs-5 text-white">
+                                                            &#11162; {el.Category_Name}
+                                                        </Link>
+                                                    </li>
+                                                )
+                                            })}
+
+
 
                                         </ul>
                                     </div>
