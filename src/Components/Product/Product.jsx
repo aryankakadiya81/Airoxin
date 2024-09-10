@@ -13,7 +13,7 @@ const Product = () => {
     let [SubCategory, setSubCategory] = SubCategorys;
     let [Selected_Product, setSelected_Product] = Selected_Products;
 
-    let i=0;
+    let i = 0;
 
     const KeySkip = ['id', 'Table_Name'];
     return (
@@ -38,20 +38,22 @@ const Product = () => {
                             <div className="row g-4">
 
 
-                                <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 row g-4'>
-                                    <div className=''>
+                                <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12'>
+                                    <div className='row g-2'>
                                         {
                                             Selected_Product.Images.map((el) => {
                                                 return (
+                                                    <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12'>
 
-                                                    <img key={i++} src={el} alt="Product image" className="border-2 rounded-4 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 p-1" />
+                                                        <img key={i++} src={el} alt="Product image" className="border-2 rounded-4 p-1 card-img"/>
+                                                    </div>
                                                 )
                                             })
                                         }
                                     </div>
 
                                 </div>
-                                <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 row g-4'>
+                                <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12'>
                                     <div>
 
                                         {
@@ -65,7 +67,7 @@ const Product = () => {
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            {Object.keys(obj).map((key,index) => {
+                                                            {Object.keys(obj).map((key, index) => {
                                                                 return (
 
 
