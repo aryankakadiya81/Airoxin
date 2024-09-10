@@ -1,16 +1,18 @@
 import React, { useContext } from 'react';
 import { Global } from '../../App';
 import ProductData from '../Json_Files/Product_Page.json';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Heading from '../Mini_Components/Heading';
 
 const SubCategory_Section = () => {
 
   let Navigate = useNavigate();
 
-  let { Categorys, SubCategorys } = useContext(Global);
+  let { Categorys, SubCategorys, Selected_Products } = useContext(Global);
   let [Category, setCategory] = Categorys;
   let [SubCategory, setSubCategory] = SubCategorys;
+  let [Selected_Product, setSelected_Product] = Selected_Products;
+  
 
   return (
     <>
@@ -18,11 +20,11 @@ const SubCategory_Section = () => {
 
 
         <Heading Title={SubCategory}></Heading>
-        
+
         <div className="container my-5">
-        <div className='container d-flex justify-content-start my-5 ms-5 ps-5'>
-          <button onClick={() => { Navigate(-1) }} className='fs-4 px-4 btn btn-primary'>&#11164; Back</button>
-        </div>
+          <div className='container d-flex justify-content-start my-5'>
+            <button onClick={() => {window.scrollTo(0, 0); Navigate(-1); }} className='fs-4 px-4 btn btn-primary'>&#11164; Back</button>
+          </div>
           <div className="row g-4">
             {
               ProductData.Products.filter((el) => { return el.SubCategory_Name == SubCategory && el.Category_Name == Category }).map((el) => {
@@ -40,9 +42,9 @@ const SubCategory_Section = () => {
                           </h4>
 
 
-                          <button onClick={() => { }} type="button" className="btn btn-primary mb-3">
+                          <Link to="/Category/Subcategory/Product" onClick={() => {window.scrollTo(0, 0); ;setSelected_Product(el);}} type="button" className="btn btn-primary mb-3">
                             LEARN MORE
-                          </button>
+                          </Link>
 
                         </div>
                       </div>
@@ -50,12 +52,13 @@ const SubCategory_Section = () => {
                   </>
                 )
               })
+              
             }
 
           </div>
-          <div className='container d-flex justify-content-start my-5 ms-5 ps-5'>
-          <button onClick={() => { Navigate(-1) }} className='px-4 fs-4  btn btn-primary'>&#11164; Back</button>
-        </div>
+          {/* <div className='container d-flex justify-content-start my-5 ms-5 ps-5'>
+            <button onClick={() => { Navigate(-1); window.scrollTo(0, 0); }} className='px-4 fs-4  btn btn-primary'>&#11164; Back</button>
+          </div> */}
         </div>
 
 
@@ -67,6 +70,7 @@ const SubCategory_Section = () => {
 
     </>
   )
+  
 }
 
 export default SubCategory_Section

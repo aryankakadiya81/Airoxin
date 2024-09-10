@@ -44,7 +44,7 @@ const Service_Section = () => {
                                                         {el.Details}
                                                     </p>
 
-                                                    <Link onClick={() => { setCategory(el.Category_Name) }} type="button" to="/Category" className="btn btn-primary">
+                                                    <Link onClick={() => { setCategory(el.Category_Name); window.scrollTo(0, 0); }} type="button" to="/Category" className="btn btn-primary">
                                                         LEARN MORE
                                                     </Link>
 

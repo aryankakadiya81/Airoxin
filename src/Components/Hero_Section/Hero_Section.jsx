@@ -1,7 +1,8 @@
 import React from 'react';
+import Details from '../Json_Files/Details.json'
 import Plane from '../../Assets/Wallpaper/Plane2.svg';
 import { useNavigate } from 'react-router-dom';
-// import Wall from '../../Assets/Wallpaper/polygon-bg-element.svg';
+
 
 
 const Hero_Section = () => {
@@ -18,10 +19,10 @@ const Hero_Section = () => {
                         <div className="row gy-5 gy-lg-0 align-items-lg-center justify-content-lg-between">
                             <div className="col-12 col-lg-6 order-1 order-lg-0">
                                 <h2 className="display-3 fw-bold mb-3">
-                                Global Connections, <span className='text-primary'>Local Solutions</span>
+                                {Details.Shlogan_Section.Shlogen_black_line} <span className='text-primary'>{Details.Shlogan_Section.Shlogen_blue_line}</span>
                                 </h2>
                                 <p className="fs-4 mb-5">
-                                Airoxin International is a dynamic global trade company specializing in the seamless import and export of goods worldwide. With a strong commitment to quality, reliability, and innovation, we bridge the gap between international markets, providing efficient and effective solutions for our clients. Our extensive network of suppliers and partners enables us to source a diverse range of products, ensuring that we meet the specific needs of our customers. From raw materials to finished goods, Airoxin International is your trusted partner in global trade.
+                                {Details.Shlogan_Section.Paragraph}
                                 </p>
                                 <div className="d-grid gap-2 d-sm-flex">
                                     <button

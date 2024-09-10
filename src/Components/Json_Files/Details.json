@@ -1,0 +1,51 @@
+{
+    "Shlogan_Section": {
+        "Section_Name_File": "Hero_Section",
+        "Shlogen_black_line": "Global Connections, ",
+        "Shlogen_blue_line": "Local Solutions",
+        "Paragraph": "Airoxin International is a dynamic global trade company specializing in the seamless import and export of goods worldwide. With a strong commitment to quality, reliability, and innovation, we bridge the gap between international markets, providing efficient and effective solutions for our clients. Our extensive network of suppliers and partners enables us to source a diverse range of products, ensuring that we meet the specific needs of our customers. From raw materials to finished goods, Airoxin International is your trusted partner in global trade."
+    },
+    "About_Company_Section": {
+        "Section_Name_File": "About_Company",
+        "Paragraph": "Airoxin International is a leading global trade company dedicated to connecting businesses worldwide. With a strong foundation built on trust, reliability, and innovation, we specialize in the seamless import and export of goods, offering comprehensive solutions to meet the diverse needs of our clients.",
+        "Features": [
+            "Sourcing and Procurement",
+            "Quality Control",
+            "Logistics and Shipping",
+            "Market Research",
+            "After-Sales Support",
+            "We Help in Export-Import Documentation"
+        ]
+    },
+    "Consign_Section":{
+        "Section_Name_File": "Consign_Section",
+        "Paragraph":"Your Trusted Partner for Global Trade, Providing Seamless Import-Export and Trading Solutions.",
+        "Box":[
+            {
+                "Icon":"fa-solid fa-boxes-stacked",
+                "Count":"100+",
+                "Name":"Consignment Done"
+            },
+            {
+                "Icon":"fa-solid fa-thumbs-up",
+                "Count":"10+",
+                "Name":"Happy Buyers"
+            },
+            {
+                "Icon":"fa-solid fa-trophy",
+                "Count":"02+",
+                "Name":"Years Experience"
+            },
+            {
+                "Icon":"fa-solid fa-handshake",
+                "Count":"50+",
+                "Name":"Suppliers"
+            }
+        ]
+    },
+    "Work_Section":{
+        "Section_Name_File": "Work_Section",
+        "Work_Shlogen":"Your Global Trade Partner, Delivering Quality, Reliability and Innovation.",
+        "Paragraph":"Airoxin International is a premier global merchandise company specializing in the seamless import, export, and trading of goods worldwide. With a strong focus on quality, reliability, and innovation, we serve as a trusted bridge between international markets, connecting businesses and facilitating trade."
+    }
+}

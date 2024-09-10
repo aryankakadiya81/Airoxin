@@ -23,8 +23,8 @@ export let Global = createContext();
 
 const App = () => {
 
-    let [Category, setCategory] = useState("");
-    let [SubCategory, setSubCategory] = useState("");
+    let [Category, setCategory] = useState("Readymade Garments");
+    let [SubCategory, setSubCategory] = useState("T-shirt");
     let [Selected_Product, setSelected_Product] = useState({});
 
 

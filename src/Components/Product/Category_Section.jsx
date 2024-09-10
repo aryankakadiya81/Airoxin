@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
 import { Global } from '../../App';
 import ProductData from '../Json_Files/Product_Page.json';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Category_Section = () => {
+
+    let Navigate = useNavigate();
 
     let { Categorys, SubCategorys } = useContext(Global);
     let [Category, setCategory] = Categorys;
@@ -14,8 +16,11 @@ const Category_Section = () => {
         <>
             <div className='bg-white'>
 
-                
+
                 <div className="container my-5">
+                    <div className='container d-flex justify-content-start my-5'>
+                        <button onClick={() => { Navigate("/Home"); window.scrollTo(0, 0); }} className='fs-4 px-4 btn btn-primary'>&#11164; Back</button>
+                    </div>
                     <div className="row g-4">
                         {
                             ProductData.SubCategory.filter((el) => { return el.Category_Name == Category }).map((el) => {
@@ -33,7 +38,7 @@ const Category_Section = () => {
                                                     </h4>
 
 
-                                                    <Link onClick={() => { setSubCategory(el.SubCategory_Name)}} to="/Category/Subcategory" type="button" className="btn btn-primary mb-3">
+                                                    <Link onClick={() => { setSubCategory(el.SubCategory_Name); window.scrollTo(0, 0); }} to="/Category/Subcategory" type="button" className="btn btn-primary mb-3">
                                                         LEARN MORE
                                                     </Link>
 

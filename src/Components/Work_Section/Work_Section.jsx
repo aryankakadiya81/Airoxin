@@ -1,5 +1,6 @@
 import React from 'react';
-import Work from '../../Assets/Wallpaper/Work1.svg'
+import Detail from '../Json_Files/Details.json'
+import Work from '../../Assets/Wallpaper/Work1.svg';
 
 const Work_Section = () => {
     return (
@@ -13,9 +14,9 @@ const Work_Section = () => {
                                 <div className="row justify-content-xl-center">
                                     <div className="col-12 col-xl-10">
                                         <h2 className="mb-4 fs-1">Introducing <span className='text-primary'>Our Work</span></h2>
-                                        <h3 className='mb-4 fs-3'>Your Global Trade Partner, Delivering Quality, Reliability and Innovation.</h3>
+                                        <h3 className='mb-4 fs-3'>{Detail.Work_Section.Work_Shlogen}</h3>
                                         <p className="lead fs-4 mb-3 mb-xl-5">
-                                        Airoxin International is a premier global merchandise company specializing in the seamless import, export, and trading of goods worldwide. With a strong focus on quality, reliability, and innovation, we serve as a trusted bridge between international markets, connecting businesses and facilitating trade.
+                                        {Detail.Work_Section.Paragraph}
                                         </p>
                                     </div>
                                 </div>
