@@ -43,9 +43,9 @@ const Product = () => {
                                         {
                                             Selected_Product.Images.map((el) => {
                                                 return (
-                                                    <div className='col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12'>
+                                                    <div key={el} className='col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12'>
 
-                                                        <img key={i++} src={el} alt="Product image" className="border-2 rounded-4 p-1 card-img"/>
+                                                        <img src={el} alt="Product image" className="border-2 rounded-4 p-1 card-img"/>
                                                     </div>
                                                 )
                                             })

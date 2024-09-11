@@ -26,7 +26,7 @@ const Category_Section = () => {
                             ProductData.SubCategory.filter((el) => { return el.Category_Name == Category }).map((el) => {
                                 return (
                                     <>
-                                        <div className="col-12 col-sm-6 col-xl-4">
+                                        <div key={el.id} className="col-12 col-sm-6 col-xl-4">
                                             <div className="card border-0 border-2 rounded-4 border-bottom border-primary shadow-lg placeholder-glow">
                                                 <div className="card-body text-center">
                                                     <div>

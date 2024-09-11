@@ -10,6 +10,7 @@ const About_Company = () => {
         window.scrollTo(0, 0);
         Navigate("/Contact");
     }
+    let i = 0;
 
     return (
         <>
@@ -39,7 +40,7 @@ const About_Company = () => {
                                                 {
                                                     Details.About_Company_Section.Features.map((el) => {
                                                         return (
-                                                            <div className="d-flex align-items-center mb-3">
+                                                            <div key={i++} className="d-flex align-items-center mb-3">
                                                                 <div className="me-3 text-primary">
                                                                     <svg
                                                                         xmlns="http://www.w3.org/2000/svg"

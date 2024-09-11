@@ -24,14 +24,42 @@ export let Global = createContext();
 const App = () => {
 
     let [Category, setCategory] = useState("Readymade Garments");
-    let [SubCategory, setSubCategory] = useState("T-shirt");
-    let [Selected_Product, setSelected_Product] = useState({});
+    let [SubCategory, setSubCategory] = useState("Tshirts");
+    let [Selected_Product, setSelected_Product] = useState({
+        "id": "01",
+        "SubCategory_Name": "Tshirts",
+        "Category_Name": "Readymade Garments",
+        "Product_Name": "Round Nack T-shirt",
+        "Thumbnail_Image": "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+        "Images": [
+            "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+            "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+            "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+            "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg"
+        ],
+        "Tables": [
+            {
+                "id": "01",
+                "Table_Name": "General Information",
+                "Product Name": "Round Nack T-shirt",
+                "Packaging": "Pastic Bag",
+                "Size of Packing": "20cm * 20cm * 10cm",
+                "Sleeve": "Full"
+            },
+            {
+                "id": "02",
+                "Table_Name": "Pricing",
+                "1 - 34 pieces": "$5.90",
+                "35 - 599 pieces": "$5.70"
+            }
+        ]
+    });
 
 
     return (
         <>
             <div className='user-select-none'>
-                <Global.Provider value={{ Categorys: [Category, setCategory], SubCategorys: [SubCategory, setSubCategory], Selected_Products: [Selected_Product, setSelected_Product]}} >
+                <Global.Provider value={{ Categorys: [Category, setCategory], SubCategorys: [SubCategory, setSubCategory], Selected_Products: [Selected_Product, setSelected_Product] }} >
 
 
                     <FloatingWhatsApp

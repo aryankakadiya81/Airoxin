@@ -32,7 +32,7 @@ const Consign_Section = () => {
                                             {
                                                 Details.Consign_Section.Box.map((el) => {
                                                     return (
-                                                        <div className="col-12 col-sm-6">
+                                                        <div key={el.id} className="col-12 col-sm-6">
                                                             <div className="card border-0 border-bottom border-primary shadow-sm">
                                                                 <div className="card-body text-center p-4 p-xxl-5">
                                                                     <div className="btn btn-primary bsb-btn-circle bsb-btn-circle-4xl pe-none mb-2">

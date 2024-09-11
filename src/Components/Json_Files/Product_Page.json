@@ -4,19 +4,19 @@
 			"id": "01",
 			"Icon": "fa-solid fa-shirt",
 			"Category_Name": "Readymade Garments",
-			"Details": "Readymade garments offer a cost-effective and efficient solution for international buyers seeking high-quality apparel at competitive prices. With access to a global supply chain and diverse manufacturing capabilities, readymade garments provide a reliable and scalable option for businesses looking to expand their product offerings."
+			"Details": "Readymade garments, a testament to human ingenuity, weave together threads of comfort, style, and self-expression. Each piece, crafted with meticulous care and attention to detail, offers a canvas for personal expression. From the vibrant hues of summer dresses to the cozy warmth of winter sweaters, readymade garments empower us to embrace our individuality and curate wardrobes that reflect our unique personalities."
 		},
 		{
 			"id": "02",
 			"Icon": "fa-solid fa-child",
 			"Category_Name": "Under Garments",
-			"Details": "Undergarments offer a lucrative export opportunity for businesses targeting international markets. With a growing demand for comfortable, stylish, and high-quality undergarments worldwide, there is a significant potential to expand your reach and increase sales. By focusing on innovative designs, premium materials, and competitive pricing, you can attract international buyers and establish a strong presence in the global undergarment market."
+			"Details": "Undergarments, the hidden foundation of our attire, are often overlooked but play a vital role in our comfort and confidence. Crafted with intricate designs and luxurious fabrics, they offer a sense of intimacy and self-care. From the delicate lace of a bra to the softness of a pair of silk pajamas, undergarments provide a sanctuary of comfort and indulgence. They are more than just clothing; they are an expression of personal style and a testament to the artistry of design."
 		},
 		{
 			"id": "03",
 			"Icon": "fa-solid fa-bag-shopping",
-			"Category_Name": "Accessories",
-			"Details": "Accessories play a crucial role in completing any outfit and can significantly enhance the overall appeal of readymade garments. By offering a diverse range of stylish and high-quality accessories, you can attract international buyers looking to complement their clothing collections. From scarves and hats to belts and jewelry, well-chosen accessories can add personality, sophistication, and versatility to any wardrobe."
+			"Category_Name": "Clothing Accessories",
+			"Details": "Clothing accessories, the finishing touches that elevate our outfits, are more than mere adornments. They are expressions of personal style, cultural heritage, and individuality. From the delicate shimmer of a necklace to the bold statement of a statement belt, accessories have the power to transform a simple ensemble into a work of art. They add depth, texture, and personality to our attire, allowing us to showcase our unique sense of fashion and self-expression."
 		}
 	],
 	"SubCategory": [
@@ -58,21 +58,21 @@
 		{
 			"id": "06",
 			"SubCategory_Name": "Jewelry",
-			"Category_Name": "Accessories",
+			"Category_Name": "Clothing Accessories",
 			"Image": "https://i.postimg.cc/63QG7dBT/Nackless.jpg",
 			"Details": "Indulge in the beauty of our ethically sourced jewelry, crafted with care and respect for the environment. Our collection features a variety of styles, from classic to contemporary, ensuring there's something to suit every taste. Discover the joy of owning unique and sustainable jewelry that reflects your values."
 		},
 		{
 			"id": "07",
 			"SubCategory_Name": "Bags and Purses",
-			"Category_Name": "Accessories",
+			"Category_Name": "Clothing Accessories",
 			"Image": "https://i.postimg.cc/rpjrFhXv/Bag.jpg",
 			"Details": "Experience the luxury of our handcrafted bags, created using the finest materials and traditional techniques. Each bag is a testament to our commitment to quality and artistry. Explore our diverse collection and find the perfect piece to complement your lifestyle and personal style."
 		},
 		{
 			"id": "08",
 			"SubCategory_Name": "Belts",
-			"Category_Name": "Accessories",
+			"Category_Name": "Clothing Accessories",
 			"Image": "https://i.postimg.cc/PxFv1Pqy/Belt.jpg",
 			"Details": "Experience the luxury of our handcrafted belts, made from the finest materials and finished with meticulous care. Each belt is a testament to our commitment to quality and craftsmanship. Explore our diverse collection and find the perfect belt to complete your outfit and express your personal style."
 		}
