@@ -27,7 +27,7 @@ const Navbar = () => {
                             />
                         </Link>
                         <button
-                            className="navbar-toggler "
+                            className="navbar-toggler border-0 border-white"
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent"
@@ -35,7 +35,8 @@ const Navbar = () => {
                             aria-expanded="false"
                             aria-label="Toggle navigation"
                         >
-                            <span className="navbar-toggler-icon" />
+                            <span className="fa-solid fa-bars fs-3 text-white border-0" />
+                            
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto">
@@ -90,7 +91,7 @@ const Navbar = () => {
                                             Product_Data.Category.map((el) => {
                                                 return (
                                                     <li key={el.id}>
-                                                        <Link onClick={()=>{setCategory(el.Category_Name);window.scrollTo(0, 0);}} className="dropdown-item" to="/Category">
+                                                        <Link onClick={() => { setCategory(el.Category_Name); window.scrollTo(0, 0); }} className="dropdown-item" to="/Category">
                                                             {el.Category_Name}
                                                         </Link>
                                                     </li>

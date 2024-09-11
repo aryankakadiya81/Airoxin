@@ -13,8 +13,8 @@ const Consign_Section = () => {
                 <section className="py-3 py-md-5 py-xl-8" style={{ backgroundImage: `url(${Bbg})`, backgroundAttachment: `fixed`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
                     <div className="container">
                         <div className="row gy-3 gy-md-5 gy-lg-0 align-items-center">
-                            <div className="col-12 col-lg-5">
-                                <h3 className="fs-2 text-dark fw-bold mb-2 mb-xl-3">
+                            <div className="col-12 col-lg-5 my-4">
+                                <h3 className="fs-2 text-dark fw-bold my-3">
                                     {Contact.name}
                                 </h3>
                                 <h4 className="display-5 fs-1 mb-3 mb-xl-4">
