@@ -62,7 +62,7 @@ const Product = () => {
                                                 return (
                                                     <table key={obj.id} className="table table-striped border-1 border-black fs-5 table-hover">
                                                         <thead className='border-1 border-black'>
-                                                            <tr>
+                                                            <tr className='border-1 border-black'>
                                                                 <th>{obj.Table_Name}</th>
                                                             </tr>
                                                         </thead>
