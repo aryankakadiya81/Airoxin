@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { Global } from '../../App.jsx';
 import Logo from '../../Assets/Logo/HORIZONTAL/HORIZONTAL.svg';
+import Pdf from '../../Assets/Pdf/JS.pdf'
 import { Link } from 'react-router-dom';
 import Contact_Json from '../Json_Files/Contact_Page.json';
 import Product_Data from '../Json_Files/Product_Page.json';
@@ -15,7 +16,6 @@ const Footer = () => {
 
     let [Email, setEmail] = useState("");
 
-
     const HSubmit = (ev) => {
         ev.preventDefault();
         console.log(Email);
@@ -23,6 +23,29 @@ const Footer = () => {
         alert("Subscribe Successfully")
 
     }
+
+    let DownloadBroucher = () => {
+        const pdfUrl = Pdf;
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "AIROXIN.pdf"; // specify the filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
+    let DownloadCard = () => {
+        const pdfUrl = Pdf;
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "AIROXIN_CARD.pdf"; // specify the filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
+
+
     let [Data, setData] = useState(Contact_Json);
     const scrollToTop = () => {
         window.scrollTo(0, 0)
@@ -166,6 +189,31 @@ const Footer = () => {
                                                         </button>
                                                     </div>
                                                 </div>
+
+                                                <div className="col-7">
+                                                    <div className="d-grid">
+                                                        <button className="btn btn-primary" onClick={DownloadBroucher}>
+                                                            Download Broucher
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div className="col-5">
+                                                    <div className="d-grid">
+                                                        <button className="btn btn-primary" onClick={DownloadCard}>
+                                                            Download Card
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                {/* <div className="col-12">
+                                                    <div className="d-grid">
+                                                    <button className="btn btn-primary" type="submit">
+                                                    Download Card
+                                                    </button>
+                                                    </div>
+                                                    </div> */}
+
                                             </div>
                                         </form>
                                     </div>
