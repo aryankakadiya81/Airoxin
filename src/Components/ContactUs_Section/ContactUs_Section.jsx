@@ -5,14 +5,36 @@ import Contact_Json from '../Json_Files/Contact_Page.json';
 
 const ContactUs_Section = () => {
 
-    let [Data,setData] = useState(Contact_Json);
+    let [Data, setData] = useState(Contact_Json);
+
+    let [Name, setName] = useState("");
+    let [Email, setEmail] = useState("");
+    let [Phone, setPhone] = useState("");
+    let [Subject, setSubject] = useState("");
+    let [Msg, setMsg] = useState("");
+
+
+    const HSubmit = (ev) => {
+        ev.preventDefault();
+        console.log(Name, Email, Phone, Subject, Msg);
+        // setName("");
+        // setEmail("");
+        // setPhone("");
+        // setSubject("");
+        // setMsg("");
+        alert("Message Send Successfully")
+
+    }
+
+
+
     return (
         <>
             <div>
                 <section className="bg-white py-3 py-md-5">
                     <div className="container">
                         <div className="row gy-3 gy-md-4 gy-lg-0 align-items-md-center">
-                            <h1 className="col-12 text-center fw-bold justify-content-center mb-5" style={{fontSize:"40px"}}>GET IN TOUCH</h1>
+                            <h1 className="col-12 text-center fw-bold justify-content-center mb-5" style={{ fontSize: "40px" }}>GET IN TOUCH</h1>
                             <div className="col-12 col-lg-6 py-5">
                                 <div className="row justify-content-xl-center">
                                     <div className="col-12 col-xl-11">
@@ -113,8 +135,8 @@ const ContactUs_Section = () => {
                             </div>
                             <div className="col-12 col-lg-6 animate__animated animate__fadeInUp">
                                 <div className="bg-white border rounded shadow-sm overflow-hidden">
-                                    <form action="#!">
-                                        <div className="row gy-4 gy-xl-5 p-4 p-xl-5" style={{backgroundColor:"#e8f2ff"}}>
+                                    <form onSubmit={HSubmit}>
+                                        <div className="row gy-4 gy-xl-5 p-4 p-xl-5" style={{ backgroundColor: "#e8f2ff" }}>
                                             <div className="col-12">
                                                 <label htmlFor="fullname" className="form-label">
                                                     Full Name <span className="text-danger">*</span>
@@ -124,8 +146,9 @@ const ContactUs_Section = () => {
                                                     className="form-control"
                                                     id="fullname"
                                                     name="fullname"
-                                                    defaultValue=""
-                                                    required=""
+                                                    value={Name}
+                                                    onChange={(e) => setName(e.target.value)}
+                                                    required
                                                 />
                                             </div>
                                             <div className="col-12 col-md-6">
@@ -150,14 +173,15 @@ const ContactUs_Section = () => {
                                                         className="form-control"
                                                         id="email"
                                                         name="email"
-                                                        defaultValue=""
-                                                        required=""
+                                                        value={Email}
+                                                        onChange={(e) => setEmail(e.target.value)}
+                                                        required
                                                     />
                                                 </div>
                                             </div>
                                             <div className="col-12 col-md-6">
                                                 <label htmlFor="phone" className="form-label">
-                                                    Phone Number
+                                                    Phone Number <span className="text-danger">*</span>
                                                 </label>
                                                 <div className="input-group">
                                                     <span className="input-group-text">
@@ -177,7 +201,9 @@ const ContactUs_Section = () => {
                                                         className="form-control"
                                                         id="phone"
                                                         name="phone"
-                                                        defaultValue=""
+                                                        value={Phone}
+                                                        onChange={(e) => setPhone(e.target.value)}
+                                                        required
                                                     />
                                                 </div>
                                             </div>
@@ -190,8 +216,9 @@ const ContactUs_Section = () => {
                                                     className="form-control"
                                                     id="subject"
                                                     name="subject"
-                                                    defaultValue=""
-                                                    required=""
+                                                    value={Subject}
+                                                    onChange={(e) => setSubject(e.target.value)}
+                                                    required
                                                 />
                                             </div>
                                             <div className="col-12">
@@ -203,13 +230,14 @@ const ContactUs_Section = () => {
                                                     id="message"
                                                     name="message"
                                                     rows={3}
-                                                    required=""
-                                                    defaultValue={""}
+                                                    value={Msg}
+                                                    onChange={(e) => setMsg(e.target.value)}
+                                                    required
                                                 />
                                             </div>
                                             <div className="col-12">
                                                 <div className="d-grid">
-                                                    <button className="btn btn-primary btn-lg" type="submit">
+                                                    <button className="btn btn-primary btn-lg" onSubmit={HSubmit} type='submit'>
                                                         Send Message
                                                     </button>
                                                 </div>

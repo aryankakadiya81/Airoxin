@@ -13,6 +13,16 @@ const Footer = () => {
     let [Category, setCategory] = Categorys;
     let [SubCategory, setSubCategory] = SubCategorys;
 
+    let [Email, setEmail] = useState("");
+
+
+    const HSubmit = (ev) => {
+        ev.preventDefault();
+        console.log(Email);
+        // setEmail("");
+        alert("Subscribe Successfully")
+
+    }
     let [Data, setData] = useState(Contact_Json);
     const scrollToTop = () => {
         window.scrollTo(0, 0)
@@ -67,27 +77,27 @@ const Footer = () => {
                                         <ul className="list-unstyled">
                                             <li className="mb-2">
                                                 <Link to="/Home" onClick={scrollToTop} className="link-info text-decoration-none fs-5 text-white">
-                                                <i className="bi bi-dash"></i> Home
+                                                    <i className="bi bi-dash"></i> Home
                                                 </Link>
                                             </li>
                                             <li className="mb-2">
                                                 <Link to="/About" onClick={scrollToTop} className="link-info text-decoration-none fs-5 text-white">
-                                                   <i className="bi bi-dash"></i> About Us
+                                                    <i className="bi bi-dash"></i> About Us
                                                 </Link>
                                             </li>
                                             <li className="mb-2">
                                                 <Link to="/Accreditation" onClick={scrollToTop} className="link-info text-decoration-none fs-5 text-white">
-                                                   <i className="bi bi-dash"></i> Accreditation
+                                                    <i className="bi bi-dash"></i> Accreditation
                                                 </Link>
                                             </li>
                                             <li className="mb-2">
                                                 <Link to="/Team" onClick={scrollToTop} className="link-info text-decoration-none fs-5 text-white">
-                                                   <i className="bi bi-dash"></i> Our Team
+                                                    <i className="bi bi-dash"></i> Our Team
                                                 </Link>
                                             </li>
                                             <li className="mb-0">
                                                 <Link onClick={scrollToTop} to="/Tradefair" className="link-info text-decoration-none fs-5 text-white">
-                                                   <i className="bi bi-dash"></i> Trade Fair Participation
+                                                    <i className="bi bi-dash"></i> Trade Fair Participation
                                                 </Link>
                                             </li>
                                         </ul>
@@ -101,8 +111,8 @@ const Footer = () => {
                                             {Product_Data.Category.map((el) => {
                                                 return (
                                                     <li key={el.id} className="mb-2">
-                                                        <Link onClick={()=>{setCategory(el.Category_Name);window.scrollTo(0, 0);}} to="/Category" className="link-info text-decoration-none fs-5 text-white">
-                                                           <i className="bi bi-dash"></i> {el.Category_Name}
+                                                        <Link onClick={() => { setCategory(el.Category_Name); window.scrollTo(0, 0); }} to="/Category" className="link-info text-decoration-none fs-5 text-white">
+                                                            <i className="bi bi-dash"></i> {el.Category_Name}
                                                         </Link>
                                                     </li>
                                                 )
@@ -117,7 +127,7 @@ const Footer = () => {
                                     <div className="widget">
                                         <h4 className="widget-title mb-4 fs-2 text-white">Our Newsletter</h4>
 
-                                        <form action="#!">
+                                        <form onSubmit={HSubmit}>
                                             <div className="row gy-4">
                                                 <div className="col-12">
                                                     <div className="input-group">
@@ -140,11 +150,12 @@ const Footer = () => {
                                                             type="email"
                                                             className="form-control"
                                                             id="email-newsletter"
-                                                            defaultValue=""
                                                             placeholder="Email Address"
                                                             aria-label="email-newsletter"
                                                             aria-describedby="email-newsletter-addon"
-                                                            required=""
+                                                            value={Email}
+                                                            onChange={(e) => setEmail(e.target.value)}
+                                                            required
                                                         />
                                                     </div>
                                                 </div>
