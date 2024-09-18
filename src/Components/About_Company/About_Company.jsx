@@ -1,7 +1,8 @@
 import React from 'react';
 import Contact from '../Json_Files/Contact_Page.json';
-import Details from '../Json_Files/Details.json'
+import Details from '../Json_Files/All_Section_Details.json';
 import Img from '../../Assets/Wallpaper/Team1.svg';
+
 import { useNavigate } from 'react-router-dom';
 
 const About_Company = () => {
@@ -22,53 +23,26 @@ const About_Company = () => {
                             <div className="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
                                 <div className="col-12 col-lg-6 placeholder-wave">
                                     <img
-                                        className="img-fluid"
+                                        className="img-fluid p-5"
                                         loading="lazy"
                                         src={Img}
                                         alt="About 2"
+                                        height={300}
                                     />
                                 </div>
                                 <div className="col-12 col-lg-6">
-                                    <div className="row justify-content-xl-center">
+                                    <div className="row justify-content-xl-center animate__animated animate__fadeInUp">
                                         <div className="col-12 col-xl-10">
-                                            <h2 className="mb-3 fw-bold fs-2">About<span className='text-primary'> {Contact.name}</span></h2>
-                                            <p className="lead fs-4 mb-3 mb-xl-5">
+                                            <h2 className="mb-3 fw-bold fs-1">About<span className='text-primary'> {Contact.name}</span></h2>
+                                            <p className="lead fs-3 mb-3 mb-xl-5">
                                                 {Details.About_Company_Section.Paragraph}
                                             </p>
-                                            <div>
-
-                                                {
-                                                    Details.About_Company_Section.Features.map((el) => {
-                                                        return (
-                                                            <div key={i++} className="d-flex align-items-center mb-3">
-                                                                <div className="me-3 text-primary">
-                                                                    <svg
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        width={28}
-                                                                        height={28}
-                                                                        fill="currentColor"
-                                                                        className="bi bi-check-circle-fill"
-                                                                        viewBox="0 0 16 16"
-                                                                    >
-                                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                                    </svg>
-                                                                </div>
-                                                                <div>
-                                                                    <p className="fs-5 m-0">
-                                                                        {el}
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        )
-                                                    })
-                                                }
-                                            </div>
-
+                                            
 
 
                                             <button
                                                 type="button"
-                                                className="btn bsb-btn-xl btn-outline-primary rounded-pill mt-3"
+                                                className="btn bsb-btn-xl btn-outline-primary rounded-pill"
                                                 onClick={scrollToTopAbout}
                                             >
                                                 Connect Now

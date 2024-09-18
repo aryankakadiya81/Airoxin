@@ -32,7 +32,7 @@ const Service_Section = () => {
                             {
                                 Product_Data.Category.map((el) => {
                                     return (
-                                        <div key={el.id} className="col-12 col-sm-6 col-xl-4 fadeInUp-animation">
+                                        <div key={el.id} className="col-12 col-sm-6 col-xl-4 animate__animated animate__fadeInUp">
                                             <div className="card border-0 border-2 rounded-4 border-bottom border-primary shadow-sm placeholder-glow">
                                                 <div className="card-body text-center p-4 p-xxl-5">
                                                     <i className={`w-25 bg-primary rounded-circle py-3 ${el.Icon} text-white`} style={{ fontSize: "40px" }}></i>

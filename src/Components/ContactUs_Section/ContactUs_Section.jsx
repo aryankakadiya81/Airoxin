@@ -16,7 +16,7 @@ const ContactUs_Section = () => {
                             <div className="col-12 col-lg-6 py-5">
                                 <div className="row justify-content-xl-center">
                                     <div className="col-12 col-xl-11">
-                                        <div className="d-flex mb-5">
+                                        <div className="d-flex mb-5 animate__animated animate__fadeInUp">
                                             <div className="me-4 text-primary">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ const ContactUs_Section = () => {
                                                 </address>
                                             </div>
                                         </div>
-                                        <div className="row mb-2">
+                                        <div className="row mb-2 animate__animated animate__fadeInUp">
                                             <div className="col-12 col-sm-12">
                                                 <div className="d-flex mb-5">
                                                     <div className="me-4 text-primary">
@@ -111,7 +111,7 @@ const ContactUs_Section = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-lg-6">
+                            <div className="col-12 col-lg-6 animate__animated animate__fadeInUp">
                                 <div className="bg-white border rounded shadow-sm overflow-hidden">
                                     <form action="#!">
                                         <div className="row gy-4 gy-xl-5 p-4 p-xl-5" style={{backgroundColor:"#e8f2ff"}}>

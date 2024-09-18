@@ -1,5 +1,5 @@
 import React from 'react';
-import Details from '../Json_Files/Details.json'
+import Details from '../Json_Files/All_Section_Details.json'
 import Plane from '../../Assets/Wallpaper/Plane2.svg';
 import { useNavigate } from 'react-router-dom';
 
@@ -17,7 +17,7 @@ const Hero_Section = () => {
                 <section className="py-3 py-lg-5 py-xl-8">
                     <div className="container overflow-hidden">
                         <div className="row gy-5 gy-lg-0 align-items-lg-center justify-content-lg-between">
-                            <div className="col-12 col-lg-6 order-1 order-lg-0">
+                            <div className="col-12 col-lg-6 order-1 order-lg-0 animate__animated animate__fadeInUp">
                                 <h2 className="display-3 fw-bold mb-3">
                                 {Details.Shlogan_Section.Shlogen_black_line} <span className='text-primary'>{Details.Shlogan_Section.Shlogen_blue_line}</span>
                                 </h2>

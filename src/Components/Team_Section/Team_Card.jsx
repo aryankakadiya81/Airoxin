@@ -4,7 +4,7 @@ import Wall from '../../Assets/Wallpaper/Card-Wll.jpg';
 const Team_Card = (Props) => {
     return (
         
-            <div className='col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12'>
+            <div className='col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 animate__animated animate__fadeInUp'>
                 <div className="card-body py-3 border-1 rounded-5 overflow-hidden " style={{ backgroundImage: `url(${Wall})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
                     <div className="text-center">
                         <img src={Props.img} alt="Admin" className="rounded-circle" width={150} />

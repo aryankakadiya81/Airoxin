@@ -25,7 +25,7 @@ const Product = () => {
 
                 <div className="container my-5">
                     <div className='container d-flex justify-content-start my-5'>
-                        <button onClick={() => { Navigate(-1) }} className='fs-4 px-4 btn btn-primary'>&#11164; Back</button>
+                        <button onClick={() => { Navigate(-1) }} className='fs-4 px-4 btn btn-primary'><i className="bi bi-arrow-left"></i> Back</button>
                     </div>
 
 
@@ -43,7 +43,7 @@ const Product = () => {
                                         {
                                             Selected_Product.Images.map((el) => {
                                                 return (
-                                                    <div key={el} className='col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12'>
+                                                    <div key={el} className='col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 animate__animated animate__fadeInUp'>
 
                                                         <img src={el} alt="Product image" className="border-2 rounded-4 p-1 card-img"/>
                                                     </div>
@@ -60,7 +60,7 @@ const Product = () => {
 
                                             Selected_Product.Tables.map((obj) => {
                                                 return (
-                                                    <table key={obj.id} className="table table-striped border-1 border-black fs-5 table-hover">
+                                                    <table key={obj.id} className="table table-striped border-1 border-black fs-5 table-hover animate__animated animate__fadeInUp">
                                                         <thead className='border-1 border-black'>
                                                             <tr className='border-1 border-black'>
                                                                 <th>{obj.Table_Name}</th>
@@ -75,7 +75,13 @@ const Product = () => {
 
                                                                     <tr key={index} className='border-1 border-black'>
                                                                         <td className='border-1 border-black'>{key}</td>
-                                                                        <td className='border-1 border-black'>{obj[key]}</td>
+                                                                        <td className='border-1 border-black'>{obj[key].map((el)=>{
+                                                                            return(
+                                                                               <>
+                                                                               <i className="bi bi-dash"></i> {el}
+                                                                               </> 
+                                                                            )
+                                                                        })}</td>
                                                                     </tr>
 
 
@@ -101,7 +107,7 @@ const Product = () => {
 
 
                     {/* <div className='container d-flex justify-content-start my-5 ms-5 ps-5'>
-                        <button onClick={() => { Navigate(-1) }} className='px-4 fs-4  btn btn-primary'>&#11164; Back</button>
+                        <button onClick={() => { Navigate(-1) }} className='px-4 fs-4  btn btn-primary'>11164; Back</button>
                     </div> */}
                 </div>
 

@@ -67,27 +67,27 @@ const Footer = () => {
                                         <ul className="list-unstyled">
                                             <li className="mb-2">
                                                 <Link to="/Home" onClick={scrollToTop} className="link-info text-decoration-none fs-5 text-white">
-                                                    &#11162; Home
+                                                <i className="bi bi-dash"></i> Home
                                                 </Link>
                                             </li>
                                             <li className="mb-2">
                                                 <Link to="/About" onClick={scrollToTop} className="link-info text-decoration-none fs-5 text-white">
-                                                    &#11162; About Us
+                                                   <i className="bi bi-dash"></i> About Us
                                                 </Link>
                                             </li>
                                             <li className="mb-2">
                                                 <Link to="/Accreditation" onClick={scrollToTop} className="link-info text-decoration-none fs-5 text-white">
-                                                    &#11162; Accreditation
+                                                   <i className="bi bi-dash"></i> Accreditation
                                                 </Link>
                                             </li>
                                             <li className="mb-2">
                                                 <Link to="/Team" onClick={scrollToTop} className="link-info text-decoration-none fs-5 text-white">
-                                                    &#11162; Our Team
+                                                   <i className="bi bi-dash"></i> Our Team
                                                 </Link>
                                             </li>
                                             <li className="mb-0">
                                                 <Link onClick={scrollToTop} to="/Tradefair" className="link-info text-decoration-none fs-5 text-white">
-                                                    &#11162; Trade Fair Participation
+                                                   <i className="bi bi-dash"></i> Trade Fair Participation
                                                 </Link>
                                             </li>
                                         </ul>
@@ -102,7 +102,7 @@ const Footer = () => {
                                                 return (
                                                     <li key={el.id} className="mb-2">
                                                         <Link onClick={()=>{setCategory(el.Category_Name);window.scrollTo(0, 0);}} to="/Category" className="link-info text-decoration-none fs-5 text-white">
-                                                            &#11162; {el.Category_Name}
+                                                           <i className="bi bi-dash"></i> {el.Category_Name}
                                                         </Link>
                                                     </li>
                                                 )
