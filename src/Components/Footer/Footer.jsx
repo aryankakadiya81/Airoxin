@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { Global } from '../../App.jsx';
 import Logo from '../../Assets/Logo/HORIZONTAL/HORIZONTAL.svg';
-import Pdf from '../../Assets/Pdf/JS.pdf'
+import Pdf from '../../Assets/Pdf/Airoxin International.pdf'
 import { Link } from 'react-router-dom';
 import Contact_Json from '../Json_Files/Contact_Page.json';
 import Product_Data from '../Json_Files/Product_Page.json';
