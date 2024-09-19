@@ -21,7 +21,7 @@ const Why_Choose_Us = () => {
                         />
                     </div>
 
-                    <div className='col-6 px-3 py-5'>
+                    <div className='col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 px-3 py-5'>
                         <div className='fs-1 fw-bold mb-4 animate__animated animate__fadeInUp'>
                             {Details.Why_Choose_Us_Section.Title}
                         </div>
