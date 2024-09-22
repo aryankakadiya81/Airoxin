@@ -16,7 +16,7 @@ function Home_Page() {
   return (
     <>
       <div>
-        <Helmet_Jsx Title={"Home"} Description={"Airoxin International"}></Helmet_Jsx>
+        <Helmet_Jsx Title={"Home"}></Helmet_Jsx>
 
         <Navbar></Navbar>
         <Hero_Section></Hero_Section>

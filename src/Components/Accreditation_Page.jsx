@@ -3,11 +3,13 @@ import Navbar from './Navbar/Navbar'
 import Accreditation_Section from './Accreditation/Accreditation_Section'
 import Footer from './Footer/Footer'
 import Heading from './Mini_Components/Heading'
+import Helmet_Jsx from '../Helmet_Jsx'
 
 const Accreditation_Page = () => {
     return (
         <>
             <div>
+            <Helmet_Jsx Title={"Accreditation"}></Helmet_Jsx>
                 <Navbar></Navbar>
                 <Heading Title="Accreditation"></Heading>
                 <Accreditation_Section></Accreditation_Section>
