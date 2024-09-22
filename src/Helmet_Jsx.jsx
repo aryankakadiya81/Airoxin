@@ -11,9 +11,9 @@ const Helmet_Jsx = (Props) => {
 
 
             
-            <meta name="author" content={`${SEO.Author.map((el)=>{return (el);})}`}/>
+            <meta name="author" content={SEO.Author}/>
             <meta name="description" content={`${SEO.Description}`} />
-            <meta name="keywords" content={`${SEO.Keywords.map((el)=>{return (el);})}`}/>
+            <meta name="keywords" content={SEO.Keywords}/>
 
 
             <title>{Props.Title ? `${Props.Title} - AIROXIN INTERNATIONAL` : "AIROXIN INTERNATIONAL"}</title>
