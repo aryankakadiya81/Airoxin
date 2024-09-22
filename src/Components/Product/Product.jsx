@@ -45,7 +45,7 @@ const Product = () => {
                                                 return (
                                                     <div key={el} className='col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 animate__animated animate__fadeInUp'>
 
-                                                        <img src={el} alt="Product image" className="border-2 rounded-4 p-1 card-img"/>
+                                                        <img draggable="false" src={el} alt="Product image" className="border-2 rounded-4 p-1 card-img"/>
                                                     </div>
                                                 )
                                             })

@@ -30,7 +30,8 @@ const Category_Section = () => {
                                             <div className="card border-0 border-2 rounded-4 border-bottom border-primary shadow-lg placeholder-glow">
                                                 <div className="card-body text-center">
                                                     <div>
-                                                        <img src={el.Image} alt="Product image" className="card-img-top" />
+                                                        <img src={el.Image}
+                                                        draggable="false" alt="Product image" className="card-img-top" />
                                                     </div>
 
                                                     <h4 className="my-4 fw-bold">

@@ -1,6 +1,6 @@
 import React from 'react';
 import Details from "../Json_Files/All_Section_Details.json";
-import Contact from "../Json_Files/Contact_Page.json"
+import Contact from "../Json_Files/Company_Contact_Page.json"
 import Bbg from '../../Assets/Wallpaper/Earth_Wall.jpg';
 
 

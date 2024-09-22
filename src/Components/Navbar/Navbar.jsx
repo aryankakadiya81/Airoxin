@@ -22,6 +22,7 @@ const Navbar = () => {
                         <Link onClick={scrollToTop} className="navbar-brand" to="/">
                             <img
                                 src={Logo}
+                                draggable="false"
                                 alt="Airoxin"
                                 height={45}
                             />

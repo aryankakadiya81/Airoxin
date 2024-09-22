@@ -40,8 +40,8 @@ const Hero_Section = () => {
                                     
                                     <img
                                         alt="img"
+                                        draggable="false"
                                         className="img-fluid"
-                                        loading="lazy"
                                         src={Plane}
                                     />
                                 </div>

@@ -20,7 +20,7 @@ const Company_Details = () => {
                                         <span className="position-absolute top-0 start-50 translate-middle text-center rounded-circle p-2" style={{ width: "80px", height: "80px", fontSize: "42px", backgroundColor: el.Background_Color }}>
                                             <i className={el.Icon}></i>
                                         </span>
-                                        <img src={el.Image} className="card-img-top pt-5 px-3" alt="..." />
+                                        <img draggable="false" src={el.Image} className="card-img-top pt-5 px-3" alt="..." />
                                         <div className="card-body text-start ms-3">
                                             <div className="fs-5 fw-bold">{el.Title}</div>
                                             <div className='fs-6 mt-1'>

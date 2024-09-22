@@ -1,5 +1,5 @@
 import React from 'react';
-import Contact from '../Json_Files/Contact_Page.json';
+import Contact from '../Json_Files/Company_Contact_Page.json';
 import Details from '../Json_Files/All_Section_Details.json';
 import Img from '../../Assets/Wallpaper/Team1.svg';
 
@@ -23,8 +23,8 @@ const About_Company = () => {
                             <div className="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
                                 <div className="col-12 col-lg-6 placeholder-wave">
                                     <img
-                                        className="img-fluid p-5"
-                                        loading="lazy"
+                                        className="img-fluid p-5 user-select-none"
+                                        draggable="false"
                                         src={Img}
                                         alt="About 2"
                                         height={300}

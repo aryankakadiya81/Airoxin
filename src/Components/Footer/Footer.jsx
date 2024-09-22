@@ -3,7 +3,7 @@ import { Global } from '../../App.jsx';
 import Logo from '../../Assets/Logo/HORIZONTAL/HORIZONTAL.svg';
 import Pdf from '../../Assets/Pdf/Airoxin International.pdf'
 import { Link } from 'react-router-dom';
-import Contact_Json from '../Json_Files/Contact_Page.json';
+import Contact_Json from '../Json_Files/Company_Contact_Page.json';
 import Product_Data from '../Json_Files/Product_Page.json';
 
 const Footer = () => {
@@ -190,18 +190,18 @@ const Footer = () => {
                                                     </div>
                                                 </div>
 
-                                                <div className="col-7">
+                                                <div className="col-6">
                                                     <div className="d-grid">
                                                         <button className="btn btn-primary" onClick={DownloadBroucher}>
-                                                            Download Broucher
+                                                            Download<br/>Broucher
                                                         </button>
                                                     </div>
                                                 </div>
 
-                                                <div className="col-5">
+                                                <div className="col-6">
                                                     <div className="d-grid">
                                                         <button className="btn btn-primary" onClick={DownloadCard}>
-                                                            Download Card
+                                                            Download<br/>Card
                                                         </button>
                                                     </div>
                                                 </div>
@@ -230,6 +230,7 @@ const Footer = () => {
                                         <Link onClick={scrollToTop} to="/Home">
                                             <img
                                                 src={Logo}
+                                                draggable="false"
                                                 alt="BootstrapBrain Logo"
                                                 width={175}
                                                 height={57}

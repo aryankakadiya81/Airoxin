@@ -16,15 +16,15 @@ const Work_Section = () => {
                                         <h2 className="mb-4 fs-1">Introducing <span className='text-primary'>Our Work</span></h2>
                                         <h3 className='mb-4 fs-3'>{Detail.Work_Section.Work_Shlogen}</h3>
                                         <p className="lead fs-4 mb-3 mb-xl-5">
-                                        {Detail.Work_Section.Paragraph}
+                                            {Detail.Work_Section.Paragraph}
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-lg-6 placeholder-wave">
                                 <img
+                                    draggable="false"
                                     className="img-fluid rounded"
-                                    loading="lazy"
                                     src={Work}
                                     alt="About 2"
                                 />

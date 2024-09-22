@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './ContactUs_Section.css';
-import Contact_Json from '../Json_Files/Contact_Page.json';
+import Contact_Json from '../Json_Files/Company_Contact_Page.json';
 // import Bbg from '../../Assets/Wallpaper/Walll.svg';
 
 const ContactUs_Section = () => {

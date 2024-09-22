@@ -7,7 +7,7 @@ const Team_Card = (Props) => {
             <div className='col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 animate__animated animate__fadeInUp'>
                 <div className="card-body py-3 border-1 rounded-5 overflow-hidden " style={{ backgroundImage: `url(${Wall})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
                     <div className="text-center">
-                        <img src={Props.img} alt="Admin" className="rounded-circle" width={150} />
+                        <img draggable="false" src={Props.img} alt="Admin" className="rounded-circle" width={150} />
                         <div className="mt-3">
                             <h4 className='fs-3'>{Props.name}</h4>
                             <p className="text-secondary mb-3 fs-5">{Props.post}</p>

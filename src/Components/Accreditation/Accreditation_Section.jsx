@@ -26,6 +26,7 @@ const Accreditation_Section = () => {
 
                                                 <img src={el.img}
                                                     className="imgimg card-img-top rounded-4"
+                                                    draggable="false"
                                                     alt={el.Name}
                                                     height={320} />
 
@@ -42,7 +43,7 @@ const Accreditation_Section = () => {
 
                         <div className='Popup bg-black' style={{display: Img ? 'block' : 'none'}}>
                             <span onClick={()=>{setImg(null)}}>&times;</span>
-                            <img src={Img}/>
+                            <img draggable="false" src={Img}/>
                         </div>
 
                     </div>

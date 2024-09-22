@@ -51,7 +51,7 @@ const Tradefair_Participation = () => {
                                         el.images.map((i) => {
                                             return (
                                                 <div onClick={() => { setImg(i); }} className='img-fluid col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 overflow-hidden animate__animated animate__fadeInUp'>
-                                                    <img key={i} src={i} className='imgimgg w-100 border-2 rounded-3' height={350}></img>
+                                                    <img draggable="false" key={i} src={i} className='imgimgg w-100 border-2 rounded-3' height={350}></img>
                                                 </div>
                                             )
                                         })
@@ -69,7 +69,7 @@ const Tradefair_Participation = () => {
                                         el.images.map((i) => {
                                             return (
                                                 <div onClick={() => { setImg(i); }} className='animate__animated animate__fadeInUp img-fluid col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 overflow-hidden'>
-                                                    <img key={i} src={i} className='imgimgg w-100 border-2 rounded-3' height={350}></img>
+                                                    <img draggable="false" key={i} src={i} className='imgimgg w-100 border-2 rounded-3' height={350}></img>
                                                 </div>
                                             )
                                         })
@@ -83,7 +83,7 @@ const Tradefair_Participation = () => {
 
             <div className='Popupp bg-black' style={{ display: Img ? 'block' : 'none' }}>
                 <span onClick={() => { setImg(null) }}>&times;</span>
-                <img src={Img} />
+                <img draggable="false" src={Img} />
             </div>
 
 

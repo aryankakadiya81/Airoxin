@@ -15,7 +15,7 @@ const Why_Choose_Us = () => {
                     <div className='col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12'>
                         <img
                             className="img-fluid p-5"
-                            loading="lazy"
+                            draggable="false"
                             src={Img}
                             alt="About 2"
                         />
