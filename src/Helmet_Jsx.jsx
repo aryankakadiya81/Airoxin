@@ -5,23 +5,23 @@ import SEO from './Components/Json_Files/SEO_Meta_Keyword.json';
 
 
 const Helmet_Jsx = (Props) => {
-    return (
-        <Helmet>
-            {/* <></> */}
+    // return (
+    //     <Helmet>
+    //         {/* <></> */}
 
 
             
-            <meta name="author" content={SEO.Author}/>
-            <meta name="description" content={`${SEO.Description}`} />
-            <meta name="keywords" content={SEO.Keywords}/>
+    //         <meta name="author" content={SEO.Author}/>
+    //         <meta name="description" content={`${SEO.Description}`} />
+    //         <meta name="keywords" content={SEO.Keywords}/>
 
 
-            <title>{Props.Title ? `${Props.Title} - AIROXIN INTERNATIONAL` : "AIROXIN INTERNATIONAL"}</title>
-            <link rel="icon" href={Icon} />
+    //         <title>{Props.Title ? `${Props.Title} - AIROXIN INTERNATIONAL` : "AIROXIN INTERNATIONAL"}</title>
+    //         <link rel="icon" href={Icon} />
 
 
-        </Helmet>
-    )
+    //     </Helmet>
+    // )
 }
 
 export default Helmet_Jsx
