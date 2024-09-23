@@ -144,7 +144,8 @@ const Footer = () => {
                                             {Product_Data.Category.map((el) => {
                                                 return (
                                                     <li key={el.id} className="mb-2">
-                                                        <Link onClick={() => { setCategory(el.Category_Name); window.scrollTo(0, 0); }} to="/Category" className="link-info text-decoration-none fs-5 text-white">
+                                                        <Link onClick={() => { 
+                                                            window.scrollTo(0, 0); setCategory(el.Category_Name);}} to="/Category" className="link-info text-decoration-none fs-5 text-white">
                                                             <i className="bi bi-dash"></i> {el.Category_Name}
                                                         </Link>
                                                     </li>
