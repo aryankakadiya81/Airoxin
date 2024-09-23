@@ -1,12 +1,13 @@
 import React from 'react';
 import Details from "../Json_Files/All_Section_Details.json";
 import Contact from "../Json_Files/Company_Contact_Page.json"
-import Bbg from '../../Assets/Wallpaper/Earth_Wall.jpg';
+// import Bbg from '../../Assets/Wallpaper/Earth_Wall.jpg';
 
 
 {/* <section className="py-5 py-xl-8" style={{ backgroundImage: `url(${Bbg})`, backgroundAttachment: `fixed`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}> */ }
 
 const Consign_Section = () => {
+    let Bbg = "https://i.postimg.cc/qMJ35L45/Earth-Wall.jpg";
     return (
         <>
             <div>

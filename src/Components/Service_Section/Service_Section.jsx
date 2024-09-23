@@ -2,12 +2,13 @@ import React, { useContext } from 'react';
 import { Global } from '../../App';
 import './Service_Section.css';
 import Product_Data from '../Json_Files/Product_Page.json';
-import Bbg from '../../Assets/Wallpaper/Earth_Wall.jpg';
+// import Bbg from '../../Assets/Wallpaper/Earth_Wall.jpg';
 import { Link } from 'react-router-dom';
 
 
 const Service_Section = () => {
 
+    let Bbg = "https://i.postimg.cc/qMJ35L45/Earth-Wall.jpg";
     let { Categorys, SubCategorys } = useContext(Global);
 
     let [Category, setCategory] = Categorys;

@@ -79,12 +79,19 @@ const ContactUs_Section = () => {
                                                     <div>
                                                         <h4 className="mb-3 fs-1">Phone</h4>
                                                         <div className="mb-0 fs-3">
-                                                            <a
-                                                                className="link-secondary text-decoration-none"
-                                                                href={`tel:${Data.phone}`}
-                                                            >
-                                                                {Data.phone}
-                                                            </a>
+                                                            {Data.phone.map((ele) => {
+                                                                return (
+                                                                    <>
+                                                                        <a
+                                                                            className="link-secondary text-decoration-none"
+                                                                            href={`tel:${ele}`}
+                                                                        >
+                                                                            {ele}
+                                                                        </a>
+                                                                    </>
+                                                                )
+                                                            })}
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -108,18 +115,19 @@ const ContactUs_Section = () => {
                                                     <div>
                                                         <h4 className="mb-3 fs-1">E-Mail</h4>
                                                         <div className="mb-0 fs-3">
-                                                            <a
-                                                                className="link-secondary text-decoration-none"
-                                                                href={`mailto:${Data.email1}`}
-                                                            >
-                                                                {Data.email1}
-                                                            </a><br></br>
-                                                            <a
-                                                                className="link-secondary text-decoration-none"
-                                                                href={`mailto:${Data.email2}`}
-                                                            >
-                                                                {Data.email2}
-                                                            </a>
+                                                            {Data.email.map((ele) => {
+                                                                return (
+                                                                    <>
+                                                                        <a className="link-secondary text-decoration-none"
+                                                                            href={`mailto:${ele}`}
+                                                                        >
+                                                                            {ele}
+                                                                        </a><br></br>
+                                                                    </>
+                                                                )
+                                                            })}
+
+
                                                         </div>
                                                     </div>
                                                 </div>

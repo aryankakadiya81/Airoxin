@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import './Accreditation_Section.css'
 import Cdata from '../Json_Files/Cirtificate.json';
-import Bbg from '../../Assets/Wallpaper/Acc.jpg';
+// import Bbg from 'https://i.postimg.cc/DwD4m3s9/Acc.jpg';
 
 
 const Accreditation_Section = () => {
 
+    let Bbg = "https://i.postimg.cc/DwD4m3s9/Acc.jpg"
     let [Data, setData] = useState(Cdata);
     let [Img, setImg] = useState(null);
 

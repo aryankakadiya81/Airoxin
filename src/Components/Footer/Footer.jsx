@@ -68,28 +68,41 @@ const Footer = () => {
                                         </div>
                                         <div className="row mb-3 text-white">
                                             <i className="col-2 fa-solid fa-phone fs-3 align-content-center"></i>
-                                            <a
-                                                className="col-10 link-info text-decoration-none text-white fs-5"
-                                                href="tel:+919925614381"
-                                            >
-                                                {Data.phone}
-                                            </a>
+
+
+                                            {Data.phone.map((ele) => {
+                                                return (
+                                                    <>
+                                                        <a
+                                                            className="col-10 link-info text-decoration-none text-white fs-5"
+                                                            href={`tel:${ele}`}
+                                                        >
+                                                            {ele}
+                                                        </a>
+                                                        <br></br>
+                                                    </>
+                                                )
+                                            })}
+
                                         </div>
                                         <div className="row mb-3 text-white">
                                             <i className="col-2 bi bi-envelope-fill fs-3 align-content-center"></i>
                                             <div className='col-10'>
-                                                <a
-                                                    className=" link-info text-decoration-none text-white fs-5"
-                                                    href="mailto:contact.airoxin@gmail.com"
-                                                >
-                                                    {Data.email1}
-                                                </a><br></br>
-                                                <a
-                                                    className=" link-info text-decoration-none text-white fs-5"
-                                                    href="mailto:contact.airoxin@gmail.com"
-                                                >
-                                                    {Data.email2}
-                                                </a>
+
+                                                {Data.email.map((ele) => {
+                                                    return (
+                                                        <>
+                                                            <a
+                                                                className=" link-info text-decoration-none text-white fs-5"
+                                                                href={`mailto:${ele}`}
+                                                            >
+                                                                {ele}
+                                                            </a><br></br>
+                                                        </>
+                                                    )
+                                                })}
+
+
                                             </div>
                                         </div>
                                     </div>
@@ -193,7 +206,7 @@ const Footer = () => {
                                                 <div className="col-6">
                                                     <div className="d-grid">
                                                         <button className="btn btn-primary" onClick={DownloadBroucher}>
-                                                            Download<br/>Broucher
+                                                            Download<br />Broucher
                                                         </button>
                                                     </div>
                                                 </div>
@@ -201,7 +214,7 @@ const Footer = () => {
                                                 <div className="col-6">
                                                     <div className="d-grid">
                                                         <button className="btn btn-primary" onClick={DownloadCard}>
-                                                            Download<br/>Card
+                                                            Download<br />Card
                                                         </button>
                                                     </div>
                                                 </div>

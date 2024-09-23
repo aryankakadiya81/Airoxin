@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import Team_Page from '../Json_Files/Team_Page.json'
-import Bbg from '../../Assets/Wallpaper/Earth_Wall.jpg';
+// import Bbg from '../../Assets/Wallpaper/Earth_Wall.jpg';
 import Photo from '../../Assets/Team Photo/ARYAN.jpg'
 import Team_Card from './Team_Card';
 
 const Team_Section = () => {
+
+    let Bbg = "https://i.postimg.cc/qMJ35L45/Earth-Wall.jpg";
 
     let [Team, setTeam] = useState(Team_Page);
 

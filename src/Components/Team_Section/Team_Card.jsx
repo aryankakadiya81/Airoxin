@@ -1,7 +1,9 @@
 import React from 'react';
-import Wall from '../../Assets/Wallpaper/Card-Wll.jpg';
+// import Wall from '../../Assets/Wallpaper/Card-Wll.jpg';
 
 const Team_Card = (Props) => {
+
+    let Wall = "https://i.postimg.cc/Y0kWkNgj/Card-Wll.jpg";
     return (
         
             <div className='col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 animate__animated animate__fadeInUp'>
