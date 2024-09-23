@@ -23,10 +23,7 @@ import Helmet_Jsx from './Helmet_Jsx';
 
 export let Global = createContext();
 
-function relod(){
-    window.location.reload()
-}
-window.onbeforeunload = relod;
+
 
 const App = () => {
 
