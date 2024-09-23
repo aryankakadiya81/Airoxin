@@ -6,9 +6,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import Product_Data from '../Json_Files/Product_Page.json';
 
 const Navbar = () => {
-    const scrollToTop = () => {
-        window.scrollTo(0, 0)
-    }
 
     let { Categorys, SubCategorys } = useContext(Global);
 
@@ -19,7 +16,7 @@ const Navbar = () => {
             <div className='sticky-top '>
                 <nav className="navbar bg-primary navbar-expand-lg navbar-light static-top" style={{ backgroundColor: "#79adff" }}>
                     <div className="container">
-                        <Link onClick={scrollToTop} className="navbar-brand" to="/">
+                        <Link onClick={()=>{window.scrollTo(0, 0)}} className="navbar-brand" to="/">
                             <img
                                 src={Logo}
                                 draggable="false"
@@ -42,7 +39,7 @@ const Navbar = () => {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item fs-5 active">
-                                    <Link onClick={scrollToTop} className="nav-link" to="/Home">
+                                    <Link onClick={()=>{window.scrollTo(0, 0)}} className="nav-link" to="/Home">
                                         HOME
                                     </Link>
                                 </li>
@@ -61,12 +58,12 @@ const Navbar = () => {
                                         aria-labelledby="navbarDropdown"
                                     >
                                         <li>
-                                            <Link onClick={scrollToTop} className="dropdown-item" to="/About">
+                                            <Link onClick={()=>{window.scrollTo(0, 0)}} className="dropdown-item" to="/About">
                                                 ABOUT US
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link onClick={scrollToTop} className="dropdown-item" to="/Accreditation">
+                                            <Link onClick={()=>{window.scrollTo(0, 0)}} className="dropdown-item" to="/Accreditation">
                                                 ACCREDITATION
                                             </Link>
                                         </li>
@@ -103,17 +100,17 @@ const Navbar = () => {
                                     </ul>
                                 </li>
                                 <li className="nav-item fs-5">
-                                    <Link onClick={scrollToTop} className="nav-link" aria-current="page" to="/Team">
+                                    <Link onClick={()=>{window.scrollTo(0, 0)}} className="nav-link" aria-current="page" to="/Team">
                                         OUR TEAM
                                     </Link>
                                 </li>
                                 <li className="nav-item fs-5">
-                                    <Link onClick={scrollToTop} className="nav-link" aria-current="page" to='/Tradefair'>
+                                    <Link onClick={()=>{window.scrollTo(0, 0)}} className="nav-link" aria-current="page" to='/Tradefair'>
                                         TRADE FAIR PARTICIPATION
                                     </Link>
                                 </li>
                                 <li className="nav-item fs-5">
-                                    <Link onClick={scrollToTop} className="nav-link " aria-current="page" to="/Contact">
+                                    <Link onClick={()=>{window.scrollTo(0, 0)}} className="nav-link " aria-current="page" to="/Contact">
                                         CONTACT US
                                     </Link>
                                 </li>

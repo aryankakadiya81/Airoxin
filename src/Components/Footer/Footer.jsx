@@ -47,9 +47,6 @@ const Footer = () => {
 
 
     let [Data, setData] = useState(Contact_Json);
-    const scrollToTop = () => {
-        window.scrollTo(0, 0)
-    }
     return (
         <>
             <div>
@@ -112,27 +109,27 @@ const Footer = () => {
                                         <h4 className="widget-title mb-4 fs-2 text-white">Quick Links</h4>
                                         <ul className="list-unstyled">
                                             <li className="mb-2">
-                                                <Link to="/Home" onClick={scrollToTop} className="link-info text-decoration-none fs-5 text-white">
+                                                <Link to="/Home" onClick={()=>{window.scrollTo(0, 0)}} className="link-info text-decoration-none fs-5 text-white">
                                                     <i className="bi bi-dash"></i> Home
                                                 </Link>
                                             </li>
                                             <li className="mb-2">
-                                                <Link to="/About" onClick={scrollToTop} className="link-info text-decoration-none fs-5 text-white">
+                                                <Link to="/About" onClick={()=>{window.scrollTo(0, 0)}} className="link-info text-decoration-none fs-5 text-white">
                                                     <i className="bi bi-dash"></i> About Us
                                                 </Link>
                                             </li>
                                             <li className="mb-2">
-                                                <Link to="/Accreditation" onClick={scrollToTop} className="link-info text-decoration-none fs-5 text-white">
+                                                <Link to="/Accreditation" onClick={()=>{window.scrollTo(0, 0)}} className="link-info text-decoration-none fs-5 text-white">
                                                     <i className="bi bi-dash"></i> Accreditation
                                                 </Link>
                                             </li>
                                             <li className="mb-2">
-                                                <Link to="/Team" onClick={scrollToTop} className="link-info text-decoration-none fs-5 text-white">
+                                                <Link to="/Team" onClick={()=>{window.scrollTo(0, 0)}} className="link-info text-decoration-none fs-5 text-white">
                                                     <i className="bi bi-dash"></i> Our Team
                                                 </Link>
                                             </li>
                                             <li className="mb-0">
-                                                <Link onClick={scrollToTop} to="/Tradefair" className="link-info text-decoration-none fs-5 text-white">
+                                                <Link onClick={()=>{window.scrollTo(0, 0)}} to="/Tradefair" className="link-info text-decoration-none fs-5 text-white">
                                                     <i className="bi bi-dash"></i> Trade Fair Participation
                                                 </Link>
                                             </li>
@@ -240,7 +237,7 @@ const Footer = () => {
                             <div className="row gy-4 gy-md-0 align-items-sm-center">
                                 <div className="col-xs-12 col-sm-6 col-md-4 order-0 order-md-0">
                                     <div className="footer-logo-wrapper text-center text-sm-start">
-                                        <Link onClick={scrollToTop} to="/Home">
+                                        <Link onClick={()=>{window.scrollTo(0, 0)}} to="/Home">
                                             <img
                                                 src={Logo}
                                                 draggable="false"
