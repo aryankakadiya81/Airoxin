@@ -5,23 +5,22 @@ import SEO from './Components/Json_Files/SEO_Meta_Keyword.json';
 
 
 const Helmet_Jsx = (Props) => {
-    // return (
-    //     <Helmet>
-    //         {/* <></> */}
+    return (
+        <Helmet>
+
+            <meta name="keywords" content="import-export, international trade, global sourcing, supply chain management, customs clearance, international logistics, market analysis, global business, trade solutions, reliable partner,global trade,readymade garments,medicine,international business,supply chain management,customs clearance,international logistics,market analysis,global sourcing" />
 
 
-            
-    //         <meta name="author" content={SEO.Author}/>
-    //         <meta name="description" content={`${SEO.Description}`} />
-    //         <meta name="keywords" content={SEO.Keywords}/>
+            <meta name="description" content="Airoxin International is a leading global trade company specializing in import-export, offering seamless solutions for businesses worldwide. Benefit from our expertise, global network, and commitment to quality." />
+
+            <title>AIROXIN INTERNATIONAL</title>
+            <link rel="icon" href="./icon.svg" type="image" />
 
 
-    //         <title>{Props.Title ? `${Props.Title} - AIROXIN INTERNATIONAL` : "AIROXIN INTERNATIONAL"}</title>
-    //         <link rel="icon" href={Icon} />
 
 
-    //     </Helmet>
-    // )
+        </Helmet>
+    )
 }
 
 export default Helmet_Jsx

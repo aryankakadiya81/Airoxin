@@ -23,7 +23,7 @@ const Accreditation_Section = () => {
 
                                     <div className='col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 border-0 animate__animated animate__fadeInUp' key={el.id}>
                                         <div className='imgdiv shadow-sm p-3 border-3 rounded-4' style={{ backgroundImage: `url(${Bbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-                                            <div className='overflow-hidden animate__animated animate__fadeInUp animate__delay-1s' onClick={()=>{setImg(el.img)}}>
+                                            <div className='overflow-hidden' onClick={()=>{setImg(el.img)}}>
 
                                                 <img src={el.img}
                                                     className="imgimg card-img-top rounded-4"
