@@ -1,21 +1,33 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
 import Icon from "./Assets/Logo/ICON/icon.svg";
-import SEO from './Components/Json_Files/SEO_Meta_Keyword.json';
+import Seo_Data from '../src/Components/Json_Files/SEO_Meta_Keyword.json'
+
 
 
 const Helmet_Jsx = (Props) => {
     return (
         <Helmet>
 
-            <meta name="keywords" content="import-export, international trade, global sourcing, supply chain management, customs clearance, international logistics, market analysis, global business, trade solutions, reliable partner,global trade,readymade garments,medicine,international business,supply chain management,customs clearance,international logistics,market analysis,global sourcing" />
+            <meta name="keywords" content={Seo_Data.General.Keywords} />
+            <meta name="description" content={Seo_Data.General.Description} />
+            <meta name="robots" content="Home,About,Contact" />
 
 
-            <meta name="description" content="Airoxin International is a leading global trade company specializing in import-export, offering seamless solutions for businesses worldwide. Benefit from our expertise, global network, and commitment to quality." />
+            {
+                Props.Desc.map((el)=>{
+                    return(
+                        <meta name="description" content={el} />
+                    )
+                })
+            }
+            <title>{Props.Title}</title>
+            <link rel="icon" href={Icon} type="image" />
 
-            <title>AIROXIN INTERNATIONAL</title>
-            <link rel="icon" href="./icon.svg" type="image" />
-
+            {/* <meta property="og:title" content="Your page title"/>
+            <meta property="og:description" content="Your page description"/>
+            <meta property="og:image" content="URL of your image"/>
+            <meta property="og:type" value="Product"/> */}
 
 
 

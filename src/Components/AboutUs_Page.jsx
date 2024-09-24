@@ -7,12 +7,15 @@ import Work_Section from './Work_Section/Work_Section';
 import Heading from './Mini_Components/Heading';
 import Company_Details from './Company_Details/Company_Details';
 import Why_Choose_Us from './Why_Choose_Us/Why_Choose_Us';
+import Helmet_Jsx from '../Helmet_Jsx';
+import Seo_Data from './Json_Files/SEO_Meta_Keyword.json'
+
 
 const AboutUs_Page = () => {
     return (
         <>
             <div className='user-select-none'>
-            
+            <Helmet_Jsx Title={Seo_Data.Aboutpage.Title} Desc={Seo_Data.Aboutpage.Description}></Helmet_Jsx>
                 <Navbar></Navbar>
                 <Heading Title="About Us"></Heading>
                 {/* <Hero_Section></Hero_Section> */}
