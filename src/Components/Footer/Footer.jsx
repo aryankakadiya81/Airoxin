@@ -24,6 +24,7 @@ const Footer = () => {
 
         // console.log(Name, Email, Phone, Subject, Msg);
         e.preventDefault();
+        toast.success("Subscribe Successfully");
         try {
             const response = await axios.post("https://airoxin-backend.onrender.com/v1/Mail", {
                 Name: "From Subscribe",
@@ -33,7 +34,6 @@ const Footer = () => {
                 Txt: "From Subscribe"
             });
             setEmail("");
-            toast.success("Subscribe Successfully");
 
         } catch (error) {
             console.log(error);
@@ -127,27 +127,32 @@ const Footer = () => {
                                         <h4 className="widget-title mb-4 fs-2 text-white">Quick Links</h4>
                                         <ul className="list-unstyled">
                                             <li className="mb-2">
-                                                <Link to="/Home" onClick={()=>{window.scrollTo(0, 0)}} className="link-info text-decoration-none fs-5 text-white">
+                                                <Link to="/Home" onClick={() => { window.scrollTo(0, 0) }} className="link-info text-decoration-none fs-5 text-white">
                                                     <i className="bi bi-dash"></i> Home
                                                 </Link>
                                             </li>
                                             <li className="mb-2">
-                                                <Link to="/About" onClick={()=>{window.scrollTo(0, 0)}} className="link-info text-decoration-none fs-5 text-white">
+                                                <Link to="/About" onClick={() => { window.scrollTo(0, 0) }} className="link-info text-decoration-none fs-5 text-white">
                                                     <i className="bi bi-dash"></i> About Us
                                                 </Link>
                                             </li>
                                             <li className="mb-2">
-                                                <Link to="/Accreditation" onClick={()=>{window.scrollTo(0, 0)}} className="link-info text-decoration-none fs-5 text-white">
+                                                <Link to="/Accreditation" onClick={() => { window.scrollTo(0, 0) }} className="link-info text-decoration-none fs-5 text-white">
                                                     <i className="bi bi-dash"></i> Accreditation
                                                 </Link>
                                             </li>
                                             <li className="mb-2">
-                                                <Link to="/Team" onClick={()=>{window.scrollTo(0, 0)}} className="link-info text-decoration-none fs-5 text-white">
+                                                <Link to="/Team" onClick={() => { window.scrollTo(0, 0) }} className="link-info text-decoration-none fs-5 text-white">
                                                     <i className="bi bi-dash"></i> Our Team
                                                 </Link>
                                             </li>
+                                            <li className="mb-2">
+                                                <Link to="/Contact" onClick={() => { window.scrollTo(0, 0) }} className="link-info text-decoration-none fs-5 text-white">
+                                                    <i className="bi bi-dash"></i> Contact Us
+                                                </Link>
+                                            </li>
                                             <li className="mb-0">
-                                                <Link onClick={()=>{window.scrollTo(0, 0)}} to="/Tradefair" className="link-info text-decoration-none fs-5 text-white">
+                                                <Link onClick={() => { window.scrollTo(0, 0) }} to="/Tradefair" className="link-info text-decoration-none fs-5 text-white">
                                                     <i className="bi bi-dash"></i> Trade Fair Participation
                                                 </Link>
                                             </li>
@@ -162,8 +167,9 @@ const Footer = () => {
                                             {Product_Data.Category.map((el) => {
                                                 return (
                                                     <li key={el.id} className="mb-2">
-                                                        <Link onClick={() => { 
-                                                            window.scrollTo(0, 0); setCategory(el.Category_Name);}} to="/Category" className="link-info text-decoration-none fs-5 text-white">
+                                                        <Link onClick={() => {
+                                                            window.scrollTo(0, 0); setCategory(el.Category_Name);
+                                                        }} to="/Category" className="link-info text-decoration-none fs-5 text-white">
                                                             <i className="bi bi-dash"></i> {el.Category_Name}
                                                         </Link>
                                                     </li>
@@ -176,6 +182,7 @@ const Footer = () => {
                                     </div>
                                 </div>
                                 <div className="col-12 col-lg-4">
+
                                     <div className="widget">
                                         <h4 className="widget-title mb-4 fs-2 text-white">Our Newsletter</h4>
 
@@ -213,27 +220,13 @@ const Footer = () => {
                                                 </div>
                                                 <div className="col-12">
                                                     <div className="d-grid">
-                                                        <button className="btn btn-primary" type="submit">
+                                                        <button className="btn btn-primary" type="submit" disabled={!Email}>
                                                             Subscribe
                                                         </button>
                                                     </div>
                                                 </div>
 
-                                                <div className="col-6">
-                                                    <div className="d-grid">
-                                                        <button className="btn btn-primary" onClick={DownloadBroucher}>
-                                                            Download<br />Broucher
-                                                        </button>
-                                                    </div>
-                                                </div>
 
-                                                <div className="col-6">
-                                                    <div className="d-grid">
-                                                        <button className="btn btn-primary" onClick={DownloadCard}>
-                                                            Download<br />Card
-                                                        </button>
-                                                    </div>
-                                                </div>
 
                                                 {/* <div className="col-12">
                                                     <div className="d-grid">
@@ -246,6 +239,23 @@ const Footer = () => {
                                             </div>
                                         </form>
                                     </div>
+                                    <div className='row g-4 mt-1'>
+                                        <div className="col-6">
+                                            <div className="d-grid">
+                                                <button className="btn btn-primary" onClick={DownloadBroucher}>
+                                                    Download<br />Broucher
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div className="col-6">
+                                            <div className="d-grid">
+                                                <button className="btn btn-primary" onClick={DownloadCard}>
+                                                    Download<br />Card
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -256,7 +266,7 @@ const Footer = () => {
                             <div className="row gy-4 gy-md-0 align-items-sm-center">
                                 <div className="col-xs-12 col-sm-6 col-md-4 order-0 order-md-0">
                                     <div className="footer-logo-wrapper text-center text-sm-start">
-                                        <Link onClick={()=>{window.scrollTo(0, 0)}} to="/Home">
+                                        <Link onClick={() => { window.scrollTo(0, 0) }} to="/Home">
                                             <img
                                                 src={Logo}
                                                 draggable="false"
