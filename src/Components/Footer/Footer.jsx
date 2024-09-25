@@ -1,7 +1,8 @@
+import Pdf from '../../Assets/Pdf/Airoxin International Brochure.pdf'
+import Pdf2 from '../../Assets/Pdf/Airoxin International Card.pdf.pdf'
 import React, { useState, useContext } from 'react';
 import { Global } from '../../App.jsx';
 import Logo from '../../Assets/Logo/HORIZONTAL/HORIZONTAL.svg';
-import Pdf from '../../Assets/Pdf/Airoxin International.pdf'
 import { Link } from 'react-router-dom';
 import Contact_Json from '../Json_Files/Company_Contact_Page.json';
 import Product_Data from '../Json_Files/Product_Page.json';
@@ -45,17 +46,17 @@ const Footer = () => {
         const pdfUrl = Pdf;
         const link = document.createElement("a");
         link.href = pdfUrl;
-        link.download = "AIROXIN.pdf"; // specify the filename
+        link.download = "AIROXIN Brochure.pdf"; // specify the filename
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     };
 
     let DownloadCard = () => {
-        const pdfUrl = Pdf;
+        const pdfUrl = Pdf2;
         const link = document.createElement("a");
         link.href = pdfUrl;
-        link.download = "AIROXIN_CARD.pdf"; // specify the filename
+        link.download = "AIROXIN CARD.pdf"; // specify the filename
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
