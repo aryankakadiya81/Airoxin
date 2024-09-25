@@ -1,5 +1,5 @@
 import Pdf from '../../Assets/Pdf/Airoxin International Brochure.pdf'
-import Pdf2 from '../../Assets/Pdf/Airoxin International Card.pdf.pdf'
+import Pdf2 from '../../Assets/Pdf/Airoxin International Card.pdf'
 import React, { useState, useContext } from 'react';
 import { Global } from '../../App.jsx';
 import Logo from '../../Assets/Logo/HORIZONTAL/HORIZONTAL.svg';
