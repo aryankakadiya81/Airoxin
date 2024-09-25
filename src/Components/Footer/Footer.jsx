@@ -5,6 +5,9 @@ import Pdf from '../../Assets/Pdf/Airoxin International.pdf'
 import { Link } from 'react-router-dom';
 import Contact_Json from '../Json_Files/Company_Contact_Page.json';
 import Product_Data from '../Json_Files/Product_Page.json';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
 
 const Footer = () => {
 
@@ -16,11 +19,25 @@ const Footer = () => {
 
     let [Email, setEmail] = useState("");
 
-    const HSubmit = (ev) => {
-        ev.preventDefault();
-        console.log(Email);
-        // setEmail("");
-        alert("Subscribe Successfully")
+    const HSubmit = async (e) => {
+
+        // console.log(Name, Email, Phone, Subject, Msg);
+        e.preventDefault();
+        try {
+            const response = await axios.post("https://airoxin-backend.onrender.com/v1/Mail", {
+                Name: "From Subscribe",
+                Email: Email,
+                Mobile: "From Subscribe",
+                Sub: "From Subscribe",
+                Txt: "From Subscribe"
+            });
+            setEmail("");
+            toast.success("Subscribe Successfully");
+
+        } catch (error) {
+            console.log(error);
+        }
+
 
     }
 

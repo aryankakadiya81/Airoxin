@@ -15,7 +15,7 @@ const AboutUs_Page = () => {
     return (
         <>
             <div className='user-select-none'>
-            <Helmet_Jsx Title={Seo_Data.Aboutpage.Title} Desc={Seo_Data.Aboutpage.Description}></Helmet_Jsx>
+            <Helmet_Jsx Title={Seo_Data.Aboutpage.Title} Desc={Seo_Data.Aboutpage.Description} Url={Seo_Data.Aboutpage.Url}></Helmet_Jsx>
                 <Navbar></Navbar>
                 <Heading Title="About Us"></Heading>
                 {/* <Hero_Section></Hero_Section> */}

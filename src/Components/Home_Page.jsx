@@ -23,7 +23,7 @@ function Home_Page() {
     <>
       <div>
         
-        <Helmet_Jsx Title={Seo_Data.Homepage.Title} Desc={Seo_Data.Homepage.Description}></Helmet_Jsx>
+        <Helmet_Jsx Title={Seo_Data.Homepage.Title} Desc={Seo_Data.Homepage.Description} Url={Seo_Data.Homepage.Url}></Helmet_Jsx>
         <Navbar></Navbar>
         <Hero_Section></Hero_Section>
         <Service_Section></Service_Section>

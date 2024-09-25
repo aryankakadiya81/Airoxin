@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './ContactUs_Section.css';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Contact_Json from '../Json_Files/Company_Contact_Page.json';
+import axios from 'axios';
 // import Bbg from '../../Assets/Wallpaper/Walll.svg';
 
 const ContactUs_Section = () => {
@@ -14,17 +17,32 @@ const ContactUs_Section = () => {
     let [Msg, setMsg] = useState("");
 
 
-    const HSubmit = (ev) => {
-        ev.preventDefault();
-        console.log(Name, Email, Phone, Subject, Msg);
-        // setName("");
-        // setEmail("");
-        // setPhone("");
-        // setSubject("");
-        // setMsg("");
-        alert("Message Send Successfully")
+    const HSubmit = async (e) => {
+
+        // console.log(Name, Email, Phone, Subject, Msg);
+        e.preventDefault();
+        try {
+            const response = await axios.post("https://airoxin-backend.onrender.com/v1/Mail", {
+                Name: Name,
+                Email: Email,
+                Mobile: Phone,
+                Sub: Subject,
+                Txt: Msg
+            });
+            setName("");
+            setEmail("");
+            setPhone("");
+            setSubject("");
+            setMsg("");
+            toast.success("Message Send Successfully, We Will Connect to you Soon");
+
+        } catch (error) {
+            console.log(error);
+        }
+
 
     }
+
 
 
 
@@ -245,7 +263,9 @@ const ContactUs_Section = () => {
                                             </div>
                                             <div className="col-12">
                                                 <div className="d-grid">
-                                                    <button className="btn btn-primary btn-lg" onSubmit={HSubmit} type='submit'>
+                                                    <button className="btn btn-primary btn-lg" type='submit'
+                                                        onSubmit={HSubmit}
+                                                        disabled={!Msg || !Subject || !Email || !Phone || !Name} >
                                                         Send Message
                                                     </button>
                                                 </div>

@@ -13,6 +13,8 @@ import Tradefair_Participation_Page from './Components/Tradefair_Participation_P
 import Category_Page from './Components/Category_Page';
 import SubCategory_Section from './Components/Product/SubCategory_Section';
 import Product from './Components/Product/Product';
+import Tostify from './Tostify';
+import { ToastContainer } from 'react-toastify';
 // import Company_Details from './Components/Company_Details/Company_Details';
 
 
@@ -62,8 +64,8 @@ const App = () => {
     return (
         <>
             <div className='user-select-none'>
+                    <ToastContainer></ToastContainer>
                 <Global.Provider value={{ Categorys: [Category, setCategory], SubCategorys: [SubCategory, setSubCategory], Selected_Products: [Selected_Product, setSelected_Product] }} >
-
 
                     <FloatingWhatsApp
                         phoneNumber="+91 9925614381"
