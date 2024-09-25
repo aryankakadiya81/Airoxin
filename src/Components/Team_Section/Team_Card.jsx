@@ -17,27 +17,27 @@ const Team_Card = (Props) => {
                         </div>
                         <ul className="list-unstyled m-0 p-0 d-flex justify-content-center mb-2">
                             <li className="me-4">
-                                <a href={Props.facebook} className="link-dark link-dark">
+                                <a target="_blank" href={Props.facebook} className="link-dark link-dark">
                                     <i className="text-primary fs-6 fa-brands fa-square-facebook"></i>
                                 </a>
                             </li>
                             <li className="me-4">
-                                <a href={Props.twitter} className="link-dark link-opacity-75-hover">
+                                <a target="_blank" href={Props.twitter} className="link-dark link-opacity-75-hover">
                                     <i className="text-primary fs-6 fa-brands fa-square-x-twitter"></i>
                                 </a>
                             </li>
                             <li className="me-4">
-                                <a href={Props.linkedin} className="link-dark link-opacity-75-hover">
+                                <a target="_blank" href={Props.linkedin} className="link-dark link-opacity-75-hover">
                                     <i className="text-primary fs-6 fa-brands fa-linkedin"></i>
                                 </a>
                             </li>
                             <li className="me-4">
-                                <a href={Props.whatsapp} className="link-dark link-opacity-75-hover">
+                                <a target="_blank" href={Props.whatsapp} className="link-dark link-opacity-75-hover">
                                     <i className="text-primary fs-6 fa-brands fa-square-whatsapp"></i>
                                 </a>
                             </li>
                             <li className="">
-                                <a href={Props.instagram} className="link-dark link-opacity-75-hover">
+                                <a target="_blank" href={Props.instagram} className="link-dark link-opacity-75-hover">
                                     <i className="text-primary fs-6 fa-brands fa-square-instagram"></i>
                                 </a>
                             </li>
