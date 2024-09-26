@@ -9,7 +9,7 @@ const Company_Details = () => {
         <>
             <div className='container py-5'>
 
-                <div className='row g-5'>
+                <div className='row g-4'>
 
 
                     {
