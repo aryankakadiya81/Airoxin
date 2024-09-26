@@ -35,7 +35,7 @@ const Helmet_Jsx = (Props) => {
 
 
             
-            <link rel="icon" href={Icon} />
+            {/* <link rel="icon" href={Icon} /> */}
 
             {/* <meta property="og:title" content="Your page title"/>
             <meta property="og:description" content="Your page description"/>
