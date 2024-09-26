@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Tradefair from '../Json_Files/Tradefair.json';
+import Tradefair from '../../Json_Files/Tradefair.json';
 import './Tradefair_Participent.css';
 
 const Tradefair_Participation = () => {

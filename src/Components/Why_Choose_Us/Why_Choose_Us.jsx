@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from '../../Assets/Wallpaper/Choose_Us.svg';
-import Details from '../Json_Files/All_Section_Details.json';
+import Details from '../../Json_Files/All_Section_Details.json';
 
 
 const Why_Choose_Us = () => {

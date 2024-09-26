@@ -9,7 +9,7 @@ import Team_Section from "./Team_Section/Team_Section";
 import ContactUs_Section from "./ContactUs_Section/ContactUs_Section";
 import Footer from "./Footer/Footer";
 import Helmet_Jsx from "../Helmet_Jsx";
-import Seo_Data from './Json_Files/SEO_Meta_Keyword.json'
+import Seo_Data from '../Json_Files/SEO_Meta_Keyword.json'
 
 
 // import Error_Page from "./Components/Error_Page/Error_Page";

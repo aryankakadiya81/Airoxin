@@ -1,6 +1,6 @@
 import React from 'react';
-import Contact from '../Json_Files/Company_Contact_Page.json';
-import Details from '../Json_Files/All_Section_Details.json';
+import Contact from '../../Json_Files/Company_Contact_Page.json';
+import Details from '../../Json_Files/All_Section_Details.json';
 import Img from '../../Assets/Wallpaper/Team1.svg';
 
 import { useNavigate } from 'react-router-dom';

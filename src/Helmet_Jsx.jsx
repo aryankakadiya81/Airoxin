@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
 import Icon from "./Assets/Logo/ICON/icon.svg";
-import Seo_Data from '../src/Components/Json_Files/SEO_Meta_Keyword.json'
+import Seo_Data from './Json_Files/SEO_Meta_Keyword.json'
 
 
 

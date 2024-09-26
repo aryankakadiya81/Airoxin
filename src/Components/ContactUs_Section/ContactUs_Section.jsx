@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ContactUs_Section.css';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Contact_Json from '../Json_Files/Company_Contact_Page.json';
+import Contact_Json from '../../Json_Files/Company_Contact_Page.json';
 import axios from 'axios';
 // import Bbg from '../../Assets/Wallpaper/Walll.svg';
 

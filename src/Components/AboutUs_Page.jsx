@@ -8,7 +8,7 @@ import Heading from './Mini_Components/Heading';
 import Company_Details from './Company_Details/Company_Details';
 import Why_Choose_Us from './Why_Choose_Us/Why_Choose_Us';
 import Helmet_Jsx from '../Helmet_Jsx';
-import Seo_Data from './Json_Files/SEO_Meta_Keyword.json'
+import Seo_Data from '../Json_Files/SEO_Meta_Keyword.json'
 
 
 const AboutUs_Page = () => {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Team_Page from '../Json_Files/Team_Page.json'
+import Team_Page from '../../Json_Files/Team_Page.json'
 // import Bbg from '../../Assets/Wallpaper/Earth_Wall.jpg';
 import Photo from '../../Assets/Team Photo/ARYAN.jpg'
 import Team_Card from './Team_Card';

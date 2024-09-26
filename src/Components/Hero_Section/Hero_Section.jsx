@@ -1,5 +1,5 @@
 import React from 'react';
-import Details from '../Json_Files/All_Section_Details.json'
+import Details from '../../Json_Files/All_Section_Details.json'
 import Plane from '../../Assets/Wallpaper/Plane2.svg';
 import { useNavigate } from 'react-router-dom';
 

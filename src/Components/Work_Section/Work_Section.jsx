@@ -1,5 +1,5 @@
 import React from 'react';
-import Detail from '../Json_Files/All_Section_Details.json'
+import Detail from '../../Json_Files/All_Section_Details.json'
 import Work from '../../Assets/Wallpaper/Work1.svg';
 
 const Work_Section = () => {

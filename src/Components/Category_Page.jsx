@@ -4,7 +4,7 @@ import Navbar from './Navbar/Navbar';
 import SubCategory_Section from './Product/Category_Section';
 import Footer from './Footer/Footer';
 import Heading from './Mini_Components/Heading';
-import Seo_Data from './Json_Files/SEO_Meta_Keyword.json'
+import Seo_Data from '../Json_Files/SEO_Meta_Keyword.json'
 import Helmet_Jsx from "../Helmet_Jsx";
 
 

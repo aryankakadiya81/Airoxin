@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Global } from '../../App';
-import ProductData from '../Json_Files/Product_Page.json';
+import ProductData from '../../Json_Files/Product_Page.json';
 import { Link, useNavigate } from 'react-router-dom';
 import Heading from '../Mini_Components/Heading';
 

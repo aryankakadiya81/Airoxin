@@ -1,5 +1,5 @@
 import React from 'react';
-import Details from '../Json_Files/About_Company_Details.json'
+import Details from '../../Json_Files/About_Company_Details.json'
 // import ppp from '../../Assets/Company_Details_Png/Aryan-Suit-SVG.svg';
 
 const Company_Details = () => {
