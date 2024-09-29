@@ -81,7 +81,7 @@ const Product = () => {
                                                                         <td className='border-1 border-black'>{obj[key].map((el) => {
                                                                             return (
                                                                                 <>
-                                                                                    <i className="bi bi-dash"></i> {el}
+                                                                                    <i className="bi bi-arrow-right"></i> {el}
                                                                                 </>
                                                                             )
                                                                         })}</td>
