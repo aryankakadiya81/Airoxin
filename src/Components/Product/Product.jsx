@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
+import "./Product.css";
 import { Global } from '../../App';
 import ProductData from '../../Json_Files/Product_Page.json';
 import { useNavigate } from 'react-router-dom';
@@ -7,6 +8,8 @@ import Heading from '../Mini_Components/Heading';
 const Product = () => {
 
     let Navigate = useNavigate();
+
+    let [Img, setImg] = useState(null);
 
     let { Categorys, SubCategorys, Selected_Products } = useContext(Global);
     let [Category, setCategory] = Categorys;
@@ -43,9 +46,9 @@ const Product = () => {
                                         {
                                             Selected_Product.Images.map((el) => {
                                                 return (
-                                                    <div key={el} className='col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 animate__animated animate__fadeInUp'>
+                                                    <div key={el} className='col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 animate__animated animate__fadeInUp overflow-hidden' onClick={()=>{setImg(el)}}>
 
-                                                        <img draggable="false" src={el} alt="Product image" className="border-2 rounded-4 p-1 card-img"/>
+                                                        <img draggable="false" src={el} alt="Product image" className="imgimg2 border-2 rounded-4 p-1 card-img" />
                                                     </div>
                                                 )
                                             })
@@ -75,11 +78,11 @@ const Product = () => {
 
                                                                     <tr key={index} className='border-1 border-black'>
                                                                         <td className='border-1 border-black'>{key}</td>
-                                                                        <td className='border-1 border-black'>{obj[key].map((el)=>{
-                                                                            return(
-                                                                               <>
-                                                                               <i className="bi bi-dash"></i> {el}
-                                                                               </> 
+                                                                        <td className='border-1 border-black'>{obj[key].map((el) => {
+                                                                            return (
+                                                                                <>
+                                                                                    <i className="bi bi-dash"></i> {el}
+                                                                                </>
                                                                             )
                                                                         })}</td>
                                                                     </tr>
@@ -110,12 +113,15 @@ const Product = () => {
                         <button onClick={() => { Navigate(-1) }} className='px-4 fs-4  btn btn-primary'>11164; Back</button>
                     </div> */}
                 </div>
+               
 
 
 
-
-                <div>
+                <div className='Popup bg-black' style={{ display: Img ? 'block' : 'none' }}>
+                    <span onClick={() => { setImg(null) }}>&times;</span>
+                    <img draggable="false" src={Img} />
                 </div>
+
             </div>
 
         </>
