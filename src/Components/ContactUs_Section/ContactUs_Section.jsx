@@ -21,7 +21,7 @@ const ContactUs_Section = () => {
 
         // console.log(Name, Email, Phone, Subject, Msg);
         e.preventDefault();
-        toast.success("Message Send Successfully, We Will Connect to you Soon");
+        toast.success("Message Send Successfully, We Will Connect you Shortly");
         try {
             const response = await axios.post("https://airoxin-backend.onrender.com/v1/Mail", {
                 Name: Name,
