@@ -13,7 +13,8 @@ import Tradefair_Participation_Page from './Components/Tradefair_Participation_P
 import Category_Page from './Components/Category_Page';
 import SubCategory_Section from './Components/Product/SubCategory_Section';
 import Product from './Components/Product/Product';
-import Tostify from './Tostify';
+import Pro_Data from './Json_Files/Product_Page.json'
+// import Tostify from './Tostify';
 import { ToastContainer } from 'react-toastify';
 // import Company_Details from './Components/Company_Details/Company_Details';
 
@@ -28,39 +29,39 @@ export let Global = createContext();
 
 const App = () => {
 
-    let [Category, setCategory] = useState("Readymade Garments");
-    let [SubCategory, setSubCategory] = useState("Tshirts");
-    let [Selected_Product, setSelected_Product] = useState({
-        "id": "01",
-        "SubCategory_Name": "Tshirts",
-        "Category_Name": "Readymade Garments",
-        "Product_Name": "Round Nack T-shirt",
-        "Thumbnail_Image": "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
-        "Images": [
-            "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
-            "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
-            "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
-            "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg"
-        ],
-        "Tables": [
-            {
-                "id": "01",
-                "Table_Name": "General Information",
-                "Product Name": ["Round Nack T-shirt"],
-                "Packaging": ["Pastic Bag"],
-                "Size of Packing": ["20cm * 20cm * 10cm"],
-                "Sleeve": ["Full"]
-            },
-            {
-                "id": "02",
-                "Table_Name": "Pricing",
-                "1 - 34 pieces": ["$5.90"],
-                "35 - 599 pieces": ["$5.70"]
-            }
-        ]
-    });
+    let [Category, setCategory] = useState(Pro_Data.Products[0].Category_Name);
+    let [SubCategory, setSubCategory] = useState(Pro_Data.Products[0].SubCategory_Name);
+    let [Selected_Product, setSelected_Product] = useState(Pro_Data.Products[0]);
 
-
+    // {
+    //     "id": "01",
+    //     "SubCategory_Name": "Tshirts",
+    //     "Category_Name": "Readymade Garments",
+    //     "Product_Name": "Round Nack T-shirt",
+    //     "Thumbnail_Image": "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+    //     "Images": [
+    //         "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+    //         "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+    //         "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+    //         "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg"
+    //     ],
+    //     "Tables": [
+    //         {
+    //             "id": "01",
+    //             "Table_Name": "General Information",
+    //             "Product Name": ["Round Nack T-shirt"],
+    //             "Packaging": ["Pastic Bag"],
+    //             "Size of Packing": ["20cm * 20cm * 10cm"],
+    //             "Sleeve": ["Full"]
+    //         },
+    //         {
+    //             "id": "02",
+    //             "Table_Name": "Pricing",
+    //             "1 - 34 pieces": ["$5.90"],
+    //             "35 - 599 pieces": ["$5.70"]
+    //         }
+    //     ]
+    // }
     return (
         <>
             <div className='user-select-none'>

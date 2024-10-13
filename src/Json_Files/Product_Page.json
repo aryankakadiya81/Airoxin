@@ -8,12 +8,6 @@
 		},
 		{
 			"id": "02",
-			"Icon": "fa-solid fa-child",
-			"Category_Name": "Under Garments",
-			"Details": "Undergarments, the hidden foundation of our attire, are often overlooked but play a vital role in our comfort and confidence. Crafted with intricate designs and luxurious fabrics, they offer a sense of intimacy and self-care. From the delicate lace of a bra to the softness of a pair of silk pajamas, undergarments provide a sanctuary of comfort and indulgence. They are more than just clothing; they are an expression of personal style and a testament to the artistry of design."
-		},
-		{
-			"id": "03",
 			"Icon": "fa-solid fa-bag-shopping",
 			"Category_Name": "Clothing Accessories",
 			"Details": "Clothing accessories, the finishing touches that elevate our outfits, are more than mere adornments. They are expressions of personal style, cultural heritage, and individuality. From the delicate shimmer of a necklace to the bold statement of a statement belt, accessories have the power to transform a simple ensemble into a work of art. They add depth, texture, and personality to our attire, allowing us to showcase our unique sense of fashion and self-expression."
@@ -42,20 +36,6 @@
 			"Details": "Experience the difference of our exceptional jeans, designed to make a statement. With meticulous attention to detail and a commitment to quality, our jeans are crafted to exceed your expectations. From timeless classics to modern trends, our collection offers something for every taste and occasion."
 		},
 		{
-			"id": "04",
-			"SubCategory_Name": "Mens",
-			"Category_Name": "Under Garments",
-			"Image": "https://i.postimg.cc/0Q1V77G0/Mens.jpg",
-			"Details": "Experience the difference of our exceptional men's underwear, designed to provide superior comfort and support. With a focus on quality and innovation, our underwear is crafted to exceed your expectations. Discover the perfect fit for your active lifestyle and enjoy the confidence that comes with wearing premium undergarments."
-		},
-		{
-			"id": "05",
-			"SubCategory_Name": "Womens",
-			"Category_Name": "Under Garments",
-			"Image": "https://i.postimg.cc/SRBRKNbR/Womens.jpg",
-			"Details": "Crafted from the finest materials, our lingerie offers a perfect blend of style, comfort, and durability. Choose from a variety of styles, including bras, panties, and corsets, to find the perfect fit for your lifestyle."
-		},
-		{
 			"id": "06",
 			"SubCategory_Name": "Jewelry",
 			"Category_Name": "Clothing Accessories",
@@ -80,30 +60,189 @@
 	"Products": [
 		{
 			"id": "01",
-			"SubCategory_Name": "Tshirts",
+			"SubCategory_Name": "Shirts",
 			"Category_Name": "Readymade Garments",
-			"Product_Name": "Round Nack T-shirt",
-			"Thumbnail_Image": "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+			"Product_Name": "Light Plaid Premium Cotton Shirt",
+			"Thumbnail_Image": "https://i.postimg.cc/TYsPPwbM/1.jpg",
 			"Images": [
-				"https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
-				"https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
-				"https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
-				"https://i.postimg.cc/GtzvfyWY/T-shirt.jpg"
+				"https://i.postimg.cc/TYsPPwbM/1.jpg",
+				"https://i.postimg.cc/fR0RSN73/2.jpg",
+				"https://i.postimg.cc/MpRzKYxV/IMG-20241001-WA0015.jpg",
+				"https://i.postimg.cc/4d8gFLbk/IMG-20241001-WA0011.jpg",
+				"https://i.postimg.cc/L4C9yXNY/IMG-20241001-WA0025.jpg",
+				"https://i.postimg.cc/bvcNQBLm/IMG-20241001-WA0021.jpg",
+				"https://i.postimg.cc/bvxYL9Bp/IMG-20241001-WA0022.jpg",
+				"https://i.postimg.cc/vmsb16Hj/IMG-20241001-WA0016.jpg",
+				"https://i.postimg.cc/RhDvqsNQ/IMG-20241001-WA0023.jpg",
+				"https://i.postimg.cc/RhFMS5VZ/IMG-20241001-WA0034.jpg",
+				"https://i.postimg.cc/HsrpFghS/IMG-20241001-WA0032.jpg"
 			],
 			"Tables": [
 				{
 					"id": "01",
 					"Table_Name": "General Information",
-					"Product Name": ["Round Nack T-shirt"],
-					"Packaging": ["Pastic Bag"],
-					"Size of Packing": ["20cm * 20cm * 10cm"],
-					"Sleeve": ["Full"]
+					"Product Name": [
+						"Light Plaid Premium Cotton Shirt"
+					],
+					"Packaging": [
+						"Pastic Bag"
+					],
+					"Selling Units": [
+						"Single Item"
+					],
+					"Single Package Size": [
+						"Approx 25cm * 20cm * 5cm"
+					],
+					"Single Gross Weight": [
+						"0.500 kg"
+					],
+					"Material": [
+						"100% Cotton"
+					]
 				},
 				{
 					"id": "02",
+					"Table_Name": "Other Attributes",
+					"Gender": [
+						"Men"
+					],
+					"Age Group": [
+						"Adult"
+					],
+					"Pattern Type": [
+						"Plaid (Chex)"
+					],
+					"Shirts Type": [
+						"DRESS SHIRTS"
+					],
+					"Weaving Method": [
+						"Woven"
+					],
+					"Color": [
+						"White",
+						"Light Yellow",
+						"Light Green",
+						"Ice White"
+					],
+					"Sleeve": [
+						"Full"
+					],
+					"Collar": [
+						"Turn-down Collar"
+					],
+					"Style": [
+						"Formal"
+					],
+					"Size": [
+						"M",
+						"L",
+						"XL",
+						"XXL",
+						"Custom..."
+					],
+					"Quality": [
+						"100% Premium Quality"
+					],
+					"Supply Ability": [
+						"500 Piece/Pieces per Day"
+					],
+					"Place of Origin": [
+						"India"
+					],
+					"Sample Service": [
+						"Yes"
+					]
+				},
+				{
+					"id": "03",
+					"Table_Name": "Sample",
+					"Maximum Order Quantity For Sample": [
+						"4 Piece"
+					],
+					"Sample Price": [
+						"$30.00/Piece"
+					],
+					"Sample Time": [
+						"7 Working Days"
+					],
+					"Sample Shipping Modes": [
+						"By Air"
+					]
+				},
+				{
+					"id": "04",
+					"Table_Name": "Customization or OEM ODM",
+					"Size Customization": [
+						"Yes"
+					],
+					"Pattern Customization": [
+						"Yes"
+					],
+					"Label Customization": [
+						"Yes"
+					],
+					"Packaging Customization": [
+						"Yes"
+					],
+					"OEM Service": [
+						"Yes",
+						"As Per Your Requirement"
+					]
+				},
+				{
+					"id": "05",
+					"Table_Name": "Minimum Order Quantity",
+					"Minimum Order Quantity": [
+						"100 Piece"
+					],
+					"Minimum Order Quantity For Size Customization": [
+						"800 Piece"
+					],
+					"Minimum Order Quantity For Pattern Customization": [
+						"800 Piece"
+					],
+					"Minimum Order Quantity For Label Customization": [
+						"500 Piece"
+					],
+					"Minimum Order Quantity For Packaging Customization": [
+						"300 Piece"
+					]
+				},
+				{
+					"id": "05",
+					"Table_Name": "Shipping and Payment Terms",
+					"Shipping": [
+						"By Air (Fedex, DHL, Etc...)",
+						"By Sea"
+					],
+					"Payment": [
+						"L/C",
+						"T/T",
+						"D/A",
+						"D/P",
+						"CAD"
+					],
+					"Delivery Time": [
+						"Depends on Quantity"
+					]
+				},
+				{
+					"id": "06",
 					"Table_Name": "Pricing",
-					"1 - 34 pieces":["$5.90"],
-					"35 - 599 pieces": ["$5.70"]
+					"100 - 499 Pieces": [
+						"$13.50"
+					],
+					"500 - 999 Pieces": [
+						"$8.50"
+					],
+					">= 1000 Pieces": [
+						"$7.50"
+					],
+					"Note": [
+						"Factory Reasonable Price.",
+						"No Middle Price.",
+						"We Can Discuss to Your Satisfy For Big OEM Order"
+					]
 				}
 			]
 		},
@@ -111,34 +250,459 @@
 			"id": "02",
 			"SubCategory_Name": "Tshirts",
 			"Category_Name": "Readymade Garments",
-			"Product_Name": "Polo Nack T-shirt",
-			"Thumbnail_Image": "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+			"Product_Name": "Drop Shoulder Oversized Hoodie",
+			"Thumbnail_Image": "https://i.postimg.cc/DZGYSvgq/Size1.png",
 			"Images": [
-				"https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
-				"https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
-				"https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
-				"https://i.postimg.cc/GtzvfyWY/T-shirt.jpg"
+				"https://i.postimg.cc/3R2Dxks2/2-Real.jpg",
+				"https://i.postimg.cc/05dwgJds/1-Real.jpg",
+				"https://i.postimg.cc/J4rBR4PB/3-Real.jpg",
+				"https://i.postimg.cc/DZGYSvgq/Size1.png",
+				"https://i.postimg.cc/nr0rXB09/2-f.png",
+				"https://i.postimg.cc/T1Rh2CqX/3-f.png",
+				"https://i.postimg.cc/9XprgHCX/4-f.png",
+				"https://i.postimg.cc/1zwzpLvQ/5-f.png",
+				"https://i.postimg.cc/jj7DMWdB/6-f.png",
+				"https://i.postimg.cc/ydCktVDx/7-f.png",
+				"https://i.postimg.cc/QdPBggsp/8-f.png",
+				"https://i.postimg.cc/W3mhPQZn/9-f.png",
+				"https://i.postimg.cc/NFffvLBs/1-f.png",
+				"https://i.postimg.cc/bwrpB2T3/Frame-1.png",
+				"https://i.postimg.cc/K84kgpXG/Print-Type.png",
+				"https://i.postimg.cc/x8YNJ0Qh/1-s.png",
+				"https://i.postimg.cc/kGc6WkX4/2-s.png",
+				"https://i.postimg.cc/P5Bxvtzy/3-s.png",
+				"https://i.postimg.cc/V6wk4Dhb/4-s.png",
+				"https://i.postimg.cc/bwGrvGbd/6-s.png",
+				"https://i.postimg.cc/hPthHZtL/7-s.png"
 			],
 			"Tables": [
 				{
 					"id": "01",
 					"Table_Name": "General Information",
-					"Product Name": ["Polo Nack T-shirt"],
-					"Packaging": ["Pastic Bag"],
-					"Size of Packing": ["20cm * 20cm * 10cm"],
-					"Sleeve": ["Full"]
+					"Product Name": [
+						"Drop Shoulder Oversized Hoodie"
+					],
+					"Packaging": [
+						"1 Pic/1 Plastic Bag"
+					],
+					"Product Type": [
+						"Hoodies"
+					],
+					"GSM": [
+						"380-390 GSM"
+					],
+					"Selling Units": [
+						"Single Item"
+					],
+					"Single Package Size": [
+						"Approx 40 cm X 28 cm X 6 cm"
+					],
+					"Single Gross Weight": [
+						"Approx 1.00 kg"
+					],
+					"Material": [
+						"100% CCH Cotton Bio-Washed Fleece Fabric"
+					],
+					"Fabric": [
+						"100% Cotton"
+					]
 				},
 				{
 					"id": "02",
-					"Table_Name": "Pricing",
-					"1 - 34 pieces": ["$5.90"],
-					"35 - 599 pieces": ["$5.70"]
+					"Table_Name": "Other Attributes",
+					"Gender": [
+						"Unisex"
+					],
+					"Fit Type": [
+						"Drop Shoulder"
+					],
+					"Weaving Method": [
+						"Woven"
+					],
+					"Color": [
+						"Black",
+						"Off White",
+						"Lavender",
+						"Mink Chiku",
+						"Sage Green",
+						"Maroon",
+						"Navy Blue",
+						"Sky Blue",
+						"Custom..."
+					],
+					"Sleeve": [
+						"Full"
+					],
+					"Collar": [
+						"Hooded"
+					],
+					"Season": [
+						"Winter"
+					],
+					"Size": [
+						"S",
+						"M",
+						"L",
+						"Custom..."
+					],
+					"Feature": [
+						"Breathable",
+						"Sustainable",
+						"Custom available"
+					],
+					"Printing": [
+						"Screen Printing",
+						"Tie Dye",
+						"Puff",
+						"Embroidery",
+						"Carving",
+						"Digital",
+						"Flocking",
+						"Reflective",
+						"Silicon"
+					],
+					"Quality": [
+						"100% Premium Quality"
+					],
+					"Supply Ability": [
+						"2000 Piece/Pieces per Day"
+					],
+					"Place of Origin": [
+						"India"
+					],
+					"Sample Service": [
+						"Yes"
+					]
 				},
 				{
 					"id": "03",
+					"Table_Name": "Sample",
+					"Minimum Order Quantity Sample": [
+						"2 Piece"
+					],
+					"Sample Price": [
+						"$70.00/Piece"
+					],
+					"Sample Time": [
+						"7 Working Days"
+					],
+					"Sample Shipping Modes": [
+						"By Air"
+					]
+				},
+				{
+					"id": "04",
+					"Table_Name": "Customization or OEM ODM",
+					"Size Customization": [
+						"Yes"
+					],
+					"Colour/Color Customization": [
+						"Yes"
+					],
+					"Pattern Customization": [
+						"Yes"
+					],
+					"Label Customization": [
+						"Yes"
+					],
+					"Packaging Customization": [
+						"Yes"
+					],
+					"OEM Service": [
+						"Yes",
+						"As Per Your Requirement"
+					]
+				},
+				{
+					"id": "05",
+					"Table_Name": "Minimum Order Quantity",
+					"Minimum Order Quantity": [
+						"200 Piece"
+					],
+					"Minimum Order Quantity For Size Customization": [
+						"300 Piece/Per Size"
+					],
+					"Minimum Order Quantity Colour/Color Customization": [
+						"270 Piece/Per Color"
+					],
+					"Minimum Order Quantity For Pattern Customization": [
+						"300 Piece/Per Pattern"
+					],
+					"Minimum Order Quantity For Label Customization": [
+						"300 Piece"
+					],
+					"Minimum Order Quantity For Packaging Customization": [
+						"300 Piece"
+					],
+					"Minimum Order Quantity For Print/Design Customization": [
+						"100 Piece/Per Design"
+					]
+				},
+				{
+					"id": "06",
+					"Table_Name": "Shipping and Payment Terms",
+					"Shipping": [
+						"By Air (Fedex, DHL, Etc...)",
+						"By Sea"
+					],
+					"Payment": [
+						"L/C",
+						"T/T",
+						"D/A",
+						"D/P",
+						"CAD"
+					],
+					"Delivery Time": [
+						"Depends on Quantity"
+					]
+				},
+				{
+					"id": "07",
 					"Table_Name": "Pricing",
-					"1 - 34 pieces": ["$5.90"],
-					"35 - 599 pieces": ["$5.70"]
+					"200 - 499 Pieces": [
+						"$17.50"
+					],
+					"500 - 999 Pieces": [
+						"$15.00"
+					],
+					">= 1000 Pieces": [
+						"$13.50"
+					],
+					"Note": [
+						"Factory Reasonable Price.",
+						"No Middle Price.",
+						"We Can Discuss to Your Satisfy For Big OEM Order"
+					]
+				}
+			]
+		},
+		{
+			"id": "03",
+			"SubCategory_Name": "Tshirts",
+			"Category_Name": "Readymade Garments",
+			"Product_Name": "Mens Regular Fit Round Neck T-shirt",
+			"Thumbnail_Image": "https://i.postimg.cc/NfJPbpfP/1.png",
+			"Images": [
+				"https://i.postimg.cc/NfJPbpfP/1.png",
+				"https://i.postimg.cc/Mpn3LVnZ/2.png",
+				"https://i.postimg.cc/G3zMhqYh/3.png",
+				"https://i.postimg.cc/ZnYVxdkS/4.png",
+				"https://i.postimg.cc/T1kQ73GW/5.png",
+				"https://i.postimg.cc/qvWDHqKs/6.png",
+				"https://i.postimg.cc/zvp2skwv/1.png",
+				"https://i.postimg.cc/Kc5W3ZXb/2.png",
+				"https://i.postimg.cc/2yMmpm7V/Group-1.png",
+				"https://i.postimg.cc/CL0pqv6y/Print-Type.png",
+				"https://i.postimg.cc/jSZTKzXp/1-s.png",
+				"https://i.postimg.cc/s2LRGsbK/2-s.png",
+				"https://i.postimg.cc/0NjsNbXb/3-s.png",
+				"https://i.postimg.cc/JzVt9S8d/Posss.png",
+				"https://i.postimg.cc/d32Mfd3S/6-s.png",
+				"https://i.postimg.cc/BZHGtWpc/7-s.png"
+			],
+			"Tables": [
+				{
+					"id": "01",
+					"Table_Name": "General Information",
+					"Product Name": [
+						"Mens Regular Fit Round Neck T-shirt"
+					],
+					"Packaging": [
+						"1 Pic/1 Plastic Bag"
+					],
+					"GSM": [
+						"180-190 GSM"
+					],
+					"Selling Units": [
+						"Single Item"
+					],
+					"Single Package Size": [
+						"Approx 26 cm X 31 cm X 6 cm"
+					],
+					"Single Gross Weight": [
+						"Approx 0.220 kg"
+					],
+					"Material": [
+						"100% Super CCH Cotton Double Bio-Washed"
+					],
+					"Fabric": [
+						"100% Cotton"
+					]
+				},
+				{
+					"id": "02",
+					"Table_Name": "Other Attributes",
+					"Gender": [
+						"Men"
+					],
+					"Fit Type": [
+						"Regular"
+					],
+					"Color": [
+						"BLACK",
+						"Navy Blue",
+						"Yellow",
+						"Purple",
+						"Red",
+						"Orange",
+						"Dark Grey",
+						"Sage Green",
+						"Lavender",
+						"Peach",
+						"Light Grey",
+						"Sky Blue",
+						"Blue",
+						"Onion",
+						"Cream Yellow",
+						"White",
+						"Off White",
+						"Wine",
+						"Coffee",
+						"Bottle Green",
+						"Custom..."
+					],
+					"Sleeve": [
+						"Half Sleeves"
+					],
+					"Collar": [
+						"Round Neck(O Neck)"
+					],
+					"Size": [
+						"S",
+						"M",
+						"L",
+						"XL",
+						"XXL",
+						"Custom..."
+					],
+					"Feature": [
+						"Breathable",
+						"Sustainable",
+						"Custom available"
+					],
+					"Printing": [
+						"Screen Printing",
+						"Tie Dye",
+						"Puff",
+						"Embroidery",
+						"Carving",
+						"Digital",
+						"Flocking",
+						"Reflective",
+						"Silicon"
+					],
+					"Quality": [
+						"100% Premium Quality"
+					],
+					"Supply Ability": [
+						"2000 Piece/Pieces per Day"
+					],
+					"Place of Origin": [
+						"India"
+					],
+					"Sample Service": [
+						"Yes"
+					]
+				},
+				{
+					"id": "03",
+					"Table_Name": "Sample",
+					"Minimum Order Quantity Sample": [
+						"2 Piece"
+					],
+					"Sample Price": [
+						"$25.00/Piece"
+					],
+					"Sample Time": [
+						"7 Working Days"
+					],
+					"Sample Shipping Modes": [
+						"By Air"
+					]
+				},
+				{
+					"id": "04",
+					"Table_Name": "Customization or OEM ODM",
+					"Size Customization": [
+						"Yes"
+					],
+					"Colour/Color Customization": [
+						"Yes"
+					],
+					"Pattern Customization": [
+						"Yes"
+					],
+					"Label Customization": [
+						"Yes"
+					],
+					"Packaging Customization": [
+						"Yes"
+					],
+					"OEM Service": [
+						"Yes",
+						"As Per Your Requirement"
+					]
+				},
+				{
+					"id": "05",
+					"Table_Name": "Minimum Order Quantity",
+					"Minimum Order Quantity": [
+						"200 Piece"
+					],
+					"Minimum Order Quantity For Size Customization": [
+						"300 Piece/Per Size"
+					],
+					"Minimum Order Quantity Colour/Color Customization": [
+						"270 Piece/Per Color"
+					],
+					"Minimum Order Quantity For Pattern Customization": [
+						"300 Piece/Per Pattern"
+					],
+					"Minimum Order Quantity For Label Customization": [
+						"300 Piece"
+					],
+					"Minimum Order Quantity For Packaging Customization": [
+						"300 Piece"
+					],
+					"Minimum Order Quantity For Print/Design Customization": [
+						"100 Piece/Per Design"
+					]
+				},
+				{
+					"id": "06",
+					"Table_Name": "Shipping and Payment Terms",
+					"Shipping": [
+						"By Air (Fedex, DHL, Etc...)",
+						"By Sea"
+					],
+					"Payment": [
+						"L/C",
+						"T/T",
+						"D/A",
+						"D/P",
+						"CAD"
+					],
+					"Delivery Time": [
+						"Depends on Quantity"
+					]
+				},
+				{
+					"id": "07",
+					"Table_Name": "Pricing",
+					"200 - 499 Pieces": [
+						"$5.00"
+					],
+					"500 - 999 Pieces": [
+						"$4.00"
+					],
+					">= 1000 Pieces": [
+						"$3.00"
+					],
+					"Note": [
+						"Factory Reasonable Price.",
+						"No Middle Price.",
+						"We Can Discuss to Your Satisfy For Big OEM Order"
+					]
 				}
 			]
 		}

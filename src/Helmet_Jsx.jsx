@@ -21,7 +21,7 @@ const Helmet_Jsx = (Props) => {
                     )
                 })
             }
-                <base href="https://www.airoxin.com/" />
+                {/* <base href="https://www.airoxin.com/" /> */}
                 <meta property="og:site_name" content="AIROXIN" />
                 <meta property="og:title" content={Props.Title} />
             {
@@ -35,12 +35,12 @@ const Helmet_Jsx = (Props) => {
 
 
             
-            {/* <link rel="icon" href={Icon} /> */}
+            <link rel="icon" href={Icon} />
 
-            {/* <meta property="og:title" content="Your page title"/>
+            <meta property="og:title" content="Your page title"/>
             <meta property="og:description" content="Your page description"/>
             <meta property="og:image" content="URL of your image"/>
-            <meta property="og:type" value="Product"/> */}
+            <meta property="og:type" value="Product"/>
 
 
 

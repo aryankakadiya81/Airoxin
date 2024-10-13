@@ -46,9 +46,9 @@ const Product = () => {
                                         {
                                             Selected_Product.Images.map((el) => {
                                                 return (
-                                                    <div key={el} className='col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 animate__animated animate__fadeInUp overflow-hidden' onClick={()=>{setImg(el)}}>
+                                                    <div key={el} className='col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 animate__animated animate__fadeInUp overflow-hidden' onClick={()=>{setImg(el)}}>
 
-                                                        <img draggable="false" src={el} alt="Product image" className="imgimg2 border-2 rounded-4 p-1 card-img" />
+                                                        <img draggable="false" src={el} alt="Product image" className="imgimg2 border-2 rounded-4 p-1 card-img"/>
                                                     </div>
                                                 )
                                             })
@@ -82,6 +82,7 @@ const Product = () => {
                                                                             return (
                                                                                 <>
                                                                                     <i className="bi bi-arrow-right"></i> {el}
+                                                                                    <br/>
                                                                                 </>
                                                                             )
                                                                         })}</td>

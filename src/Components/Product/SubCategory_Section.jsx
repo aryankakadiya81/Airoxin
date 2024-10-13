@@ -34,7 +34,7 @@ const SubCategory_Section = () => {
                       <div className="card border-0 border-2 rounded-4 border-bottom border-primary shadow-lg placeholder-glow">
                         <div className="card-body text-center">
                           <div>
-                            <img draggable="false" src={el.Images[0]} alt="Product image" className="card-img-top" />
+                            <img draggable="false" src={el.Thumbnail_Image} alt="Product image" className="card-img-top" height={400}/>
                           </div>
 
                           <h4 className="my-4 fw-bold">
