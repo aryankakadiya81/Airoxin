@@ -29,6 +29,9 @@ const Footer = () => {
             const response = await axios.post("https://airoxin-backend.onrender.com/v1/Mail", {
                 Name: "From Subscribe",
                 Email: Email,
+                Country: "From Subscribe",
+                CountryCode: "From Subscribe",
+                CountryDielCode: "From Subscribe",
                 Mobile: "From Subscribe",
                 Sub: "From Subscribe",
                 Txt: "From Subscribe"

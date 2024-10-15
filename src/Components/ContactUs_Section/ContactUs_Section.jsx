@@ -3,10 +3,21 @@ import './ContactUs_Section.css';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Contact_Json from '../../Json_Files/Company_Contact_Page.json';
+import CountryJson from '../../Json_Files/Country.json';
+// import CountrySelect from 'react-bootstrap-country-select'
+// import 'bootstrap/dist/css/bootstrap.css';
+// import 'react-bootstrap-country-select/dist/react-bootstrap-country-select.css';
 import axios from 'axios';
 // import Bbg from '../../Assets/Wallpaper/Walll.svg';
 
 const ContactUs_Section = () => {
+
+    let [Country, setCountry] = useState(null);
+    let [CountryCode, setCountryCode] = useState(null);
+    let [CountryDiel, setCountryDiel] = useState(null);
+
+console.log(Country,CountryDiel,CountryCode);
+
 
     let [Data, setData] = useState(Contact_Json);
 
@@ -26,6 +37,9 @@ const ContactUs_Section = () => {
             const response = await axios.post("https://airoxin-backend.onrender.com/v1/Mail", {
                 Name: Name,
                 Email: Email,
+                Country: Country,
+                CountryCode: CountryCode,
+                CountryDielCode: CountryDiel,
                 Mobile: Phone,
                 Sub: Subject,
                 Txt: Msg
@@ -163,7 +177,7 @@ const ContactUs_Section = () => {
                                 <div className="bg-white border rounded shadow-sm overflow-hidden">
                                     <form onSubmit={HSubmit}>
                                         <div className="row gy-4 gy-xl-5 p-4 p-xl-5" style={{ backgroundColor: "#e8f2ff" }}>
-                                            <div className="col-12">
+                                            <div className="col-12 col-md-6">
                                                 <label htmlFor="fullname" className="form-label">
                                                     Full Name <span className="text-danger">*</span>
                                                 </label>
@@ -177,50 +191,55 @@ const ContactUs_Section = () => {
                                                     required
                                                 />
                                             </div>
+                                            
+
+
                                             <div className="col-12 col-md-6">
-                                                <label htmlFor="email" className="form-label">
-                                                    Email <span className="text-danger">*</span>
+                                                {/* <CountrySelect
+                                                    value={value}
+                                                    onChange={setValue}
+                                                    onClick={setValue}
+                                                    valueAs='id'
+                                                /> */}
+                                                <label htmlFor="Country" className="form-label">
+                                                    Country <span className="text-danger">*</span>
                                                 </label>
                                                 <div className="input-group">
-                                                    <span className="input-group-text">
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            width={16}
-                                                            height={16}
-                                                            fill="currentColor"
-                                                            className="bi bi-envelope"
-                                                            viewBox="0 0 16 16"
-                                                        >
-                                                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                                                        </svg>
-                                                    </span>
-                                                    <input
-                                                        type="email"
-                                                        className="form-control"
-                                                        id="email"
-                                                        name="email"
-                                                        value={Email}
-                                                        onChange={(e) => setEmail(e.target.value)}
-                                                        required
-                                                    />
+                                                    {/* <span className="input-group-text"><i class="py-1 bi bi-globe-americas"></i></span> */}
+
+
+                                                    <div className="dropdown">
+                                                        <button type="button" className="btn btn-lg bg-white  dropdown-toggle dropdown-toggle-split fs-6 rounded-1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            {Country ? `${Country.length>=25 ? Country.slice(0,25) : Country}...` : "Country"} {/*<span className="visually-hidden">Toggle Dropdown</span> */}
+                                                        </button>
+                                                        <ul className="dropdown-menu" style={{ maxHeight: "200px", overflowY: "scroll" }}>
+
+                                                            {
+                                                                CountryJson.map((el) => {
+                                                                    return (
+                                                                        <button class="fs-6 dropdown-item" onClick={() => {
+                                                                            return(setCountry(el.name),setCountryCode(el.code),setCountryDiel(el.dial_code))}}>{el.name}  {`(${el.dial_code})`}</button>
+
+                                                                    )
+                                                                })
+                                                            }
+
+                                                        </ul>
+                                                    </div>
+
                                                 </div>
                                             </div>
+
+                                            
+
+
                                             <div className="col-12 col-md-6">
                                                 <label htmlFor="phone" className="form-label">
                                                     Phone Number <span className="text-danger">*</span>
                                                 </label>
                                                 <div className="input-group">
                                                     <span className="input-group-text">
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            width={16}
-                                                            height={16}
-                                                            fill="currentColor"
-                                                            className="bi bi-telephone"
-                                                            viewBox="0 0 16 16"
-                                                        >
-                                                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                                                        </svg>
+                                                        <i class="bi bi-telephone-fill"></i>
                                                     </span>
                                                     <input
                                                         type="tel"
@@ -233,6 +252,32 @@ const ContactUs_Section = () => {
                                                     />
                                                 </div>
                                             </div>
+
+
+
+                                            <div className="col-12 col-md-6">
+                                                <label htmlFor="email" className="form-label">
+                                                    Email <span className="text-danger">*</span>
+                                                </label>
+                                                <div className="input-group">
+                                                    <span className="input-group-text">
+                                                        <i class="bi bi-envelope-fill"></i>
+
+                                                    </span>
+                                                    <input
+                                                        type="email"
+                                                        className="form-control"
+                                                        id="email"
+                                                        name="email"
+                                                        value={Email}
+                                                        onChange={(e) => setEmail(e.target.value)}
+                                                        required
+                                                    />
+                                                </div>
+                                            </div>
+
+
+
                                             <div className="col-12">
                                                 <label htmlFor="subject" className="form-label">
                                                     Subject <span className="text-danger">*</span>
@@ -265,7 +310,7 @@ const ContactUs_Section = () => {
                                                 <div className="d-grid">
                                                     <button className="btn btn-primary btn-lg" type='submit'
                                                         onSubmit={HSubmit}
-                                                        disabled={!Msg || !Subject || !Email || !Phone || !Name} >
+                                                        disabled={!Msg || !Subject || !Email || !Phone || !Name || !Country} >
                                                         Send Message
                                                     </button>
                                                 </div>
