@@ -346,6 +346,8 @@
 						"S",
 						"M",
 						"L",
+						"XL",
+						"XXL",
 						"Custom..."
 					],
 					"Feature": [
@@ -441,7 +443,7 @@
 						"300 Piece"
 					],
 					"Minimum Order Quantity For Packaging Customization": [
-						"300 Piece"
+						"100 Piece"
 					],
 					"Minimum Order Quantity For Print/Design Customization": [
 						"100 Piece/Per Design"
@@ -683,7 +685,7 @@
 						"300 Piece"
 					],
 					"Minimum Order Quantity For Packaging Customization": [
-						"300 Piece"
+						"100 Piece"
 					],
 					"Minimum Order Quantity For Print/Design Customization": [
 						"100 Piece/Per Design"
@@ -732,57 +734,55 @@
 			"SubCategory_Name": "Shorts",
 			"Category_Name": "Readymade Garments",
 			"Product_Name": "Oversized Shorts",
-			"Thumbnail_Image": "https://i.postimg.cc/DZGYSvgq/Size1.png",
+			"Thumbnail_Image": "https://i.postimg.cc/YqD8Y3h7/3.png",
 			"Images": [
-				"https://i.postimg.cc/3R2Dxks2/2-Real.jpg",
-				"https://i.postimg.cc/05dwgJds/1-Real.jpg",
-				"https://i.postimg.cc/J4rBR4PB/3-Real.jpg",
-				"https://i.postimg.cc/DZGYSvgq/Size1.png",
-				"https://i.postimg.cc/nr0rXB09/2-f.png",
-				"https://i.postimg.cc/T1Rh2CqX/3-f.png",
-				"https://i.postimg.cc/9XprgHCX/4-f.png",
-				"https://i.postimg.cc/1zwzpLvQ/5-f.png",
-				"https://i.postimg.cc/jj7DMWdB/6-f.png",
-				"https://i.postimg.cc/ydCktVDx/7-f.png",
-				"https://i.postimg.cc/QdPBggsp/8-f.png",
-				"https://i.postimg.cc/W3mhPQZn/9-f.png",
-				"https://i.postimg.cc/NFffvLBs/1-f.png",
-				"https://i.postimg.cc/bwrpB2T3/Frame-1.png",
-				"https://i.postimg.cc/K84kgpXG/Print-Type.png",
-				"https://i.postimg.cc/x8YNJ0Qh/1-s.png",
-				"https://i.postimg.cc/kGc6WkX4/2-s.png",
-				"https://i.postimg.cc/P5Bxvtzy/3-s.png",
-				"https://i.postimg.cc/V6wk4Dhb/4-s.png",
-				"https://i.postimg.cc/bwGrvGbd/6-s.png",
-				"https://i.postimg.cc/hPthHZtL/7-s.png"
+				"https://i.postimg.cc/YqD8Y3h7/3.png",
+				"https://i.postimg.cc/mrWLwKDW/5.png",
+				"https://i.postimg.cc/5t5xkpYY/6.png",
+				"https://i.postimg.cc/fLww4XmH/7.png",
+				"https://i.postimg.cc/R057Lbmk/4.png",
+				"https://i.postimg.cc/kgtN8P0N/6.png",
+				"https://i.postimg.cc/nch0X5VT/7-2.png",
+				"https://i.postimg.cc/tJ2krdkh/9.png",
+				"https://i.postimg.cc/k4NfSPtY/10.png",
+				"https://i.postimg.cc/BZ5FR8wR/Print-Type.png",
+				"https://i.postimg.cc/CLH4CrgB/Cusom-Tshirt.png",
+				"https://i.postimg.cc/cL0XVymB/Label.png",
+				"https://i.postimg.cc/FsQZL52X/All-in-one-Service.png",
+				"https://i.postimg.cc/jj96qGz9/Brand-Building.png",
+				"https://i.postimg.cc/J4bp64bh/Shorts-Logo-Position.png",
+				"https://i.postimg.cc/SsC9SjQ2/Production-Process.png",
+				"https://i.postimg.cc/13vc2g4y/Buying-Process.png",
+				"https://i.postimg.cc/TwDVKC0P/Delivery-Time.png",
+				"https://i.postimg.cc/7h42fDbB/Packing-And-Shipping.png"
 			],
 			"Tables": [
 				{
 					"id": "01",
 					"Table_Name": "General Information",
 					"Product Name": [
-						"Drop Shoulder Oversized Hoodie"
+						"Oversized Shorts"
 					],
 					"Packaging": [
 						"1 Pic/1 Plastic Bag"
 					],
 					"Product Type": [
-						"Hoodies"
+						"Bottom Wear"
 					],
 					"GSM": [
-						"380-390 GSM"
+						"250-260 GSM"
 					],
 					"Selling Units": [
 						"Single Item"
 					],
 					"Single Package Size": [
-						"Approx 40 cm X 28 cm X 6 cm"
+						"Approx 30 cm X 27 cm X 6 cm"
 					],
 					"Single Gross Weight": [
-						"Approx 1.00 kg"
+						"Approx 0.500 kg"
 					],
 					"Material": [
-						"100% CCH Cotton Bio-Washed Fleece Fabric"
+						"French Terry 100% Super CCH Cotton Double Bio-Washed Finish Fabric"
 					],
 					"Fabric": [
 						"100% Cotton"
@@ -795,7 +795,7 @@
 						"Unisex"
 					],
 					"Fit Type": [
-						"Drop Shoulder"
+						"Oversized"
 					],
 					"Weaving Method": [
 						"Woven"
@@ -811,19 +811,18 @@
 						"Sky Blue",
 						"Custom..."
 					],
-					"Sleeve": [
-						"Full"
-					],
-					"Collar": [
-						"Hooded"
+					"Length": [
+						"Knee Length"
 					],
 					"Season": [
-						"Winter"
+						"Any"
 					],
 					"Size": [
 						"S",
 						"M",
 						"L",
+						"XL",
+						"XXL",
 						"Custom..."
 					],
 					"Feature": [
@@ -862,7 +861,7 @@
 						"2 Piece"
 					],
 					"Sample Price": [
-						"$70.00/Piece"
+						"$40.00/Piece"
 					],
 					"Sample Time": [
 						"7 Working Days"
@@ -919,7 +918,7 @@
 						"300 Piece"
 					],
 					"Minimum Order Quantity For Packaging Customization": [
-						"300 Piece"
+						"100 Piece"
 					],
 					"Minimum Order Quantity For Print/Design Customization": [
 						"100 Piece/Per Design"
@@ -947,13 +946,246 @@
 					"id": "07",
 					"Table_Name": "Pricing",
 					"200 - 499 Pieces": [
-						"$17.50"
+						"$9.50"
 					],
 					"500 - 999 Pieces": [
-						"$15.00"
+						"$8.00"
 					],
 					">= 1000 Pieces": [
-						"$13.50"
+						"$6.50"
+					],
+					"Note": [
+						"Factory Reasonable Price.",
+						"No Middle Price.",
+						"We Can Discuss to Your Satisfy For Big OEM Order"
+					]
+				}
+			]
+		},
+		{
+			"id": "04",
+			"SubCategory_Name": "Shorts",
+			"Category_Name": "Readymade Garments",
+			"Product_Name": "Normal Size Shorts",
+			"Thumbnail_Image": "https://i.postimg.cc/YqD8Y3h7/3.png",
+			"Images": [
+				"https://i.postimg.cc/YqD8Y3h7/3.png",
+				"https://i.postimg.cc/mrWLwKDW/5.png",
+				"https://i.postimg.cc/5t5xkpYY/6.png",
+				"https://i.postimg.cc/fLww4XmH/7.png",
+				"https://i.postimg.cc/R057Lbmk/4.png",
+				"https://i.postimg.cc/kgtN8P0N/6.png",
+				"https://i.postimg.cc/nch0X5VT/7-2.png",
+				"https://i.postimg.cc/tJ2krdkh/9.png",
+				"https://i.postimg.cc/k4NfSPtY/10.png",
+				"https://i.postimg.cc/BZ5FR8wR/Print-Type.png",
+				"https://i.postimg.cc/CLH4CrgB/Cusom-Tshirt.png",
+				"https://i.postimg.cc/cL0XVymB/Label.png",
+				"https://i.postimg.cc/FsQZL52X/All-in-one-Service.png",
+				"https://i.postimg.cc/jj96qGz9/Brand-Building.png",
+				"https://i.postimg.cc/J4bp64bh/Shorts-Logo-Position.png",
+				"https://i.postimg.cc/SsC9SjQ2/Production-Process.png",
+				"https://i.postimg.cc/13vc2g4y/Buying-Process.png",
+				"https://i.postimg.cc/TwDVKC0P/Delivery-Time.png",
+				"https://i.postimg.cc/7h42fDbB/Packing-And-Shipping.png"
+			],
+			"Tables": [
+				{
+					"id": "01",
+					"Table_Name": "General Information",
+					"Product Name": [
+						"Normal Size Shorts"
+					],
+					"Packaging": [
+						"1 Pic/1 Plastic Bag"
+					],
+					"Product Type": [
+						"Bottom Wear"
+					],
+					"GSM": [
+						"250-260 GSM"
+					],
+					"Selling Units": [
+						"Single Item"
+					],
+					"Single Package Size": [
+						"Approx 30 cm X 27 cm X 6 cm"
+					],
+					"Single Gross Weight": [
+						"Approx 0.500 kg"
+					],
+					"Material": [
+						"French Terry 100% Super CCH Cotton Double Bio-Washed Finish Fabric"
+					],
+					"Fabric": [
+						"100% Cotton"
+					]
+				},
+				{
+					"id": "02",
+					"Table_Name": "Other Attributes",
+					"Gender": [
+						"Unisex"
+					],
+					"Fit Type": [
+						"Regular Size"
+					],
+					"Weaving Method": [
+						"Woven"
+					],
+					"Color": [
+						"Black",
+						"Off White",
+						"Lavender",
+						"Mink Chiku",
+						"Sage Green",
+						"Maroon",
+						"Navy Blue",
+						"Sky Blue",
+						"Custom..."
+					],
+					"Length": [
+						"Knee Length"
+					],
+					"Season": [
+						"Any"
+					],
+					"Size": [
+						"S",
+						"M",
+						"L",
+						"XL",
+						"XXL",
+						"Custom..."
+					],
+					"Feature": [
+						"Breathable",
+						"Sustainable",
+						"Custom available"
+					],
+					"Printing": [
+						"Screen Printing",
+						"Tie Dye",
+						"Puff",
+						"Embroidery",
+						"Carving",
+						"Digital",
+						"Flocking",
+						"Reflective",
+						"Silicon"
+					],
+					"Quality": [
+						"100% Premium Quality"
+					],
+					"Supply Ability": [
+						"2000 Piece/Pieces per Day"
+					],
+					"Place of Origin": [
+						"India"
+					],
+					"Sample Service": [
+						"Yes"
+					]
+				},
+				{
+					"id": "03",
+					"Table_Name": "Sample",
+					"Minimum Order Quantity Sample": [
+						"2 Piece"
+					],
+					"Sample Price": [
+						"$40.00/Piece"
+					],
+					"Sample Time": [
+						"7 Working Days"
+					],
+					"Sample Shipping Modes": [
+						"By Air"
+					]
+				},
+				{
+					"id": "04",
+					"Table_Name": "Customization or OEM ODM",
+					"Size Customization": [
+						"Yes"
+					],
+					"Colour/Color Customization": [
+						"Yes"
+					],
+					"Fabric Customization": [
+						"Yes"
+					],
+					"Pattern Customization": [
+						"Yes"
+					],
+					"Label Customization": [
+						"Yes"
+					],
+					"Packaging Customization": [
+						"Yes"
+					],
+					"OEM Service": [
+						"Yes",
+						"As Per Your Requirement"
+					]
+				},
+				{
+					"id": "05",
+					"Table_Name": "Minimum Order Quantity",
+					"Minimum Order Quantity": [
+						"200 Piece"
+					],
+					"Minimum Order Quantity For Size Customization": [
+						"300 Piece/Per Size"
+					],
+					"Minimum Order Quantity Colour/Color Customization": [
+						"270 Piece/Per Color"
+					],
+					"Minimum Order Quantity Fabric Customization": [
+						"300 Piece/Per Color"
+					],
+					"Minimum Order Quantity For Pattern Customization": [
+						"300 Piece/Per Pattern"
+					],
+					"Minimum Order Quantity For Label Customization": [
+						"300 Piece"
+					],
+					"Minimum Order Quantity For Packaging Customization": [
+						"100 Piece"
+					],
+					"Minimum Order Quantity For Print/Design Customization": [
+						"100 Piece/Per Design"
+					]
+				},
+				{
+					"id": "06",
+					"Table_Name": "Shipping and Payment Terms",
+					"Shipping": [
+						"By Air (Fedex, DHL, Etc...)",
+						"By Sea"
+					],
+					"Payment": [
+						"L/C",
+						"T/T",
+						"D/A",
+						"D/P",
+						"CAD"
+					],
+					"Delivery Time": [
+						"Depends on Quantity"
+					]
+				},
+				{
+					"id": "07",
+					"Table_Name": "Pricing",
+					"200 - 499 Pieces": [
+						"$9.00"
+					],
+					"500 - 999 Pieces": [
+						"$7.70"
+					],
+					">= 1000 Pieces": [
+						"$6.25"
 					],
 					"Note": [
 						"Factory Reasonable Price.",
