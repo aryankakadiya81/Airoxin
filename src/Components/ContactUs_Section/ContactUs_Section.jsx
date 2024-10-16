@@ -16,7 +16,6 @@ const ContactUs_Section = () => {
     let [CountryCode, setCountryCode] = useState(null);
     let [CountryDiel, setCountryDiel] = useState(null);
 
-console.log(Country,CountryDiel,CountryCode);
 
 
     let [Data, setData] = useState(Contact_Json);
@@ -45,6 +44,9 @@ console.log(Country,CountryDiel,CountryCode);
                 Txt: Msg
             });
             setName("");
+            setCountry(null);
+            setCountryCode(null);
+            setCountryDiel(null);
             setEmail("");
             setPhone("");
             setSubject("");
@@ -246,6 +248,7 @@ console.log(Country,CountryDiel,CountryCode);
                                                         className="form-control"
                                                         id="phone"
                                                         name="phone"
+                                                        maxLength={10}
                                                         value={Phone}
                                                         onChange={(e) => setPhone(e.target.value)}
                                                         required
