@@ -42,7 +42,7 @@ const SubCategory_Section = () => {
                           </h4>
 
 
-                          <Link to="/Category/Subcategory/Product" onClick={() => {window.scrollTo(0, 0); ;setSelected_Product(el);}} type="button" className="btn btn-primary mb-3">
+                          <Link to="/Category/Subcategory/Product" onClick={() => {window.scrollTo(0, 0); setSelected_Product(el);}} type="button" className="btn btn-primary mb-3">
                             LEARN MORE
                           </Link>
 

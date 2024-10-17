@@ -4,9 +4,6 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Contact_Json from '../../Json_Files/Company_Contact_Page.json';
 import CountryJson from '../../Json_Files/Country.json';
-// import CountrySelect from 'react-bootstrap-country-select'
-// import 'bootstrap/dist/css/bootstrap.css';
-// import 'react-bootstrap-country-select/dist/react-bootstrap-country-select.css';
 import axios from 'axios';
 // import Bbg from '../../Assets/Wallpaper/Walll.svg';
 
